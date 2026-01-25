@@ -1,0 +1,259 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bharat-voice-assistant"
+version = "0.1.0"
+description = "Multilingual voice-first AI system for government services in India"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Bharat Voice Assistant Team", email = "team@bharatvoice.gov.in"}
+]
+maintainers = [
+    {name = "Bharat Voice Assistant Team", email = "team@bharatvoice.gov.in"}
+]
+keywords = [
+    "voice-assistant", "multilingual", "government-services", 
+    "india", "rural", "accessibility", "ai", "speech-recognition"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Government",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Communications :: Telephony",
+    "Topic :: Text Processing :: Linguistic",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.34.0",
+    "botocore>=1.34.0",
+    "pydantic>=2.5.0",
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "websockets>=12.0",
+    "aiofiles>=23.2.0",
+    "speechrecognition>=3.10.0",
+    "pydub>=0.25.1",
+    "numpy>=1.24.0",
+    "scipy>=1.11.0",
+    "nltk>=3.8.1",
+    "spacy>=3.7.0",
+    "transformers>=4.35.0",
+    "psycopg2-binary>=2.9.7",
+    "sqlalchemy>=2.0.23",
+    "alembic>=1.12.1",
+    "redis>=5.0.1",
+    "celery>=5.3.4",
+    "prometheus-client>=0.19.0",
+    "structlog>=23.2.0",
+    "psutil>=5.9.6",
+    "cryptography>=41.0.7",
+    "python-jose>=3.3.0",
+    "passlib>=1.7.4",
+    "python-dotenv>=1.0.0",
+    "click>=8.1.7",
+    "pyyaml>=6.0.1",
+    "requests>=2.31.0",
+    "httpx>=0.25.2",
+    "tenacity>=8.2.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.3",
+    "pytest-asyncio>=0.21.1",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
+    "hypothesis>=6.92.0",
+    "factory-boy>=3.3.0",
+    "black>=23.11.0",
+    "isort>=5.12.0",
+    "flake8>=6.1.0",
+    "mypy>=1.7.0",
+    "pre-commit>=3.5.0",
+    "pytest-xdist>=3.5.0",
+    "pytest-benchmark>=4.0.0",
+    "pytest-timeout>=2.2.0",
+    "pytest-html>=4.1.1",
+    "pytest-json-report>=1.5.0",
+    "pylint>=3.0.3",
+    "bandit>=1.7.5",
+    "safety>=2.3.5",
+    "vulture>=2.10",
+]
+docs = [
+    "sphinx>=7.2.6",
+    "sphinx-rtd-theme>=1.3.0",
+    "sphinx-autodoc-typehints>=1.25.2",
+]
+performance = [
+    "py-spy>=0.3.14",
+    "memory-profiler>=0.61.0",
+    "locust>=2.17.0",
+]
+testing = [
+    "moto>=4.2.14",
+    "localstack>=3.0.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/bharatvoice/bharat-voice-assistant"
+Documentation = "https://bharatvoice.readthedocs.io/"
+Repository = "https://github.com/bharatvoice/bharat-voice-assistant.git"
+"Bug Tracker" = "https://github.com/bharatvoice/bharat-voice-assistant/issues"
+Changelog = "https://github.com/bharatvoice/bharat-voice-assistant/blob/main/CHANGELOG.md"
+
+[project.scripts]
+bharat-voice = "bharat_voice_assistant.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["bharat_voice_assistant*"]
+exclude = ["tests*", "docs*", "scripts*"]
+
+[tool.setuptools.package-data]
+bharat_voice_assistant = ["py.typed", "*.yaml", "*.yml", "*.json"]
+
+# Black configuration
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+# isort configuration
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+known_first_party = ["bharat_voice_assistant"]
+known_third_party = ["boto3", "fastapi", "pydantic", "pytest", "hypothesis"]
+
+# MyPy configuration
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+show_error_codes = true
+
+[[tool.mypy.overrides]]
+module = [
+    "boto3.*",
+    "botocore.*",
+    "speechrecognition.*",
+    "pydub.*",
+    "nltk.*",
+    "spacy.*",
+    "transformers.*",
+    "celery.*",
+    "prometheus_client.*",
+    "psutil.*",
+]
+ignore_missing_imports = true
+
+# Pytest configuration
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--verbose",
+    "--tb=short",
+    "--cov=bharat_voice_assistant",
+    "--cov-report=term-missing",
+    "--cov-report=html:htmlcov",
+    "--cov-report=xml:coverage.xml",
+    "--cov-fail-under=80",
+    "--hypothesis-show-statistics",
+]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "unit: Unit tests",
+    "integration: Integration tests",
+    "property: Property-based tests",
+    "slow: Slow running tests",
+    "aws: Tests requiring AWS services",
+    "voice: Voice processing tests",
+    "language: Language processing tests",
+    "scheme: Scheme discovery tests",
+    "grievance: Grievance management tests",
+    "privacy: Privacy and security tests",
+    "performance: Performance tests",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::PendingDeprecationWarning",
+    "ignore::UserWarning:hypothesis.*",
+]
+
+# Coverage configuration
+[tool.coverage.run]
+source = ["bharat_voice_assistant"]
+omit = [
+    "*/tests/*",
+    "*/test_*.py",
+    "*/__pycache__/*",
+    "*/migrations/*",
+    "*/venv/*",
+    "*/env/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
+
+# Bandit security linting configuration
+[tool.bandit]
+exclude_dirs = ["tests", "venv", "env"]
+skips = ["B101", "B601"]  # Skip assert_used and shell_injection_process_args
+
+# Vulture dead code detection
+[tool.vulture]
+exclude = ["venv/", "env/", "tests/"]
+ignore_decorators = ["@app.route", "@pytest.fixture", "@property"]
+ignore_names = ["setUp", "tearDown", "test_*"]
+min_confidence = 80

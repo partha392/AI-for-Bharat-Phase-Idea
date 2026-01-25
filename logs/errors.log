@@ -1,0 +1,182 @@
+2026-01-26 02:11:21,369 - bharat_voice_assistant.voice.gateway - ERROR - Failed to start Voice Interface Gateway: 'Mock' object can't be awaited
+2026-01-26 02:11:21,660 - bharat_voice_assistant.voice.audio_processor - ERROR - Error compressing audio: [WinError 2] The system cannot find the file specified
+2026-01-26 02:21:33,245 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:21:33,279 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:21:33,316 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:21:33,324 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:21:33,365 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:21:33,365 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:21:33,418 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: 'RecognitionConfig' object has no attribute 'aws'
+2026-01-26 02:21:33,419 - bharat_voice_assistant.voice.speech_recognition - ERROR - Speech recognition failed: 'RecognitionConfig' object has no attribute 'aws'
+2026-01-26 02:21:33,590 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: 'RecognitionConfig' object has no attribute 'aws'
+2026-01-26 02:21:33,590 - bharat_voice_assistant.voice.speech_recognition - ERROR - Speech recognition failed: 'RecognitionConfig' object has no attribute 'aws'
+2026-01-26 02:21:33,610 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: 'RecognitionConfig' object has no attribute 'aws'
+2026-01-26 02:21:33,611 - bharat_voice_assistant.voice.speech_recognition - ERROR - Speech recognition failed: 'RecognitionConfig' object has no attribute 'aws'
+2026-01-26 02:21:33,640 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: 'RecognitionConfig' object has no attribute 'aws'
+2026-01-26 02:21:33,640 - bharat_voice_assistant.voice.speech_recognition - ERROR - Speech recognition failed: 'RecognitionConfig' object has no attribute 'aws'
+2026-01-26 02:21:33,649 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: 'RecognitionConfig' object has no attribute 'aws'
+2026-01-26 02:21:33,649 - bharat_voice_assistant.voice.speech_recognition - ERROR - Speech recognition failed: 'RecognitionConfig' object has no attribute 'aws'
+2026-01-26 02:24:54,884 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:24:54,924 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:24:54,948 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:24:54,955 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:24:54,988 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:24:54,988 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:26:22,877 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:26:22,939 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:26:22,967 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:26:22,996 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:26:23,005 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:26:23,005 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:26:23,214 - bharat_voice_assistant.voice.speech_recognition - ERROR - Error checking transcription job status: Transcription job failed: Audio quality too poor
+2026-01-26 02:26:23,215 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job failed: Audio quality too poor
+2026-01-26 02:26:23,215 - bharat_voice_assistant.voice.speech_recognition - ERROR - Speech recognition failed: Transcription job failed: Audio quality too poor
+2026-01-26 02:26:23,225 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job timed out
+2026-01-26 02:26:23,225 - bharat_voice_assistant.voice.speech_recognition - ERROR - Speech recognition failed: Transcription job timed out
+2026-01-26 02:29:57,995 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:29:58,021 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:29:58,048 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:29:58,077 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:29:58,101 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:29:58,102 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:29:58,202 - bharat_voice_assistant.voice.speech_recognition - ERROR - Error checking transcription job status: Transcription job failed: Audio quality too poor
+2026-01-26 02:29:58,202 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job failed: Audio quality too poor
+2026-01-26 02:29:58,202 - bharat_voice_assistant.voice.speech_recognition - ERROR - Speech recognition failed: Transcription job failed: Audio quality too poor
+2026-01-26 02:29:58,357 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job timed out
+2026-01-26 02:29:58,357 - bharat_voice_assistant.voice.speech_recognition - ERROR - Speech recognition failed: Transcription job timed out
+2026-01-26 02:31:33,611 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:31:33,651 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:31:33,661 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:31:33,683 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:31:33,724 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:31:33,724 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:31:33,779 - bharat_voice_assistant.voice.speech_recognition - ERROR - Error checking transcription job status: Transcription job failed: Audio quality too poor
+2026-01-26 02:31:33,779 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job failed: Audio quality too poor
+2026-01-26 02:31:33,786 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job timed out
+2026-01-26 02:31:47,589 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:31:47,651 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:31:47,675 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:31:47,698 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:31:47,720 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:31:47,720 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:31:47,811 - bharat_voice_assistant.voice.speech_recognition - ERROR - Error checking transcription job status: Transcription job failed: Audio quality too poor
+2026-01-26 02:31:47,812 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job failed: Audio quality too poor
+2026-01-26 02:31:47,818 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job timed out
+2026-01-26 02:33:01,922 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:33:01,989 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:33:02,010 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:33:02,035 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:33:02,072 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:33:02,072 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:33:02,145 - bharat_voice_assistant.voice.speech_recognition - ERROR - Error uploading audio to S3: AWS authentication failed during AWS API call put_object
+2026-01-26 02:33:02,146 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: AWS authentication failed during AWS API call put_object
+2026-01-26 02:33:02,146 - bharat_voice_assistant.voice.speech_recognition - ERROR - Speech recognition failed: AWS authentication failed during AWS API call put_object
+2026-01-26 02:33:02,146 - bharat_voice_assistant.voice.gateway - ERROR - Error processing voice input for client test-client-123: Failed to recognize speech
+2026-01-26 02:33:02,324 - bharat_voice_assistant.voice.speech_recognition - ERROR - Error uploading audio to S3: AWS authentication failed during AWS API call put_object
+2026-01-26 02:33:02,324 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: AWS authentication failed during AWS API call put_object
+2026-01-26 02:33:02,324 - bharat_voice_assistant.voice.speech_recognition - ERROR - Speech recognition failed: AWS authentication failed during AWS API call put_object
+2026-01-26 02:33:02,324 - bharat_voice_assistant.voice.gateway - ERROR - Error processing voice input for client test-client-123: Failed to recognize speech
+2026-01-26 02:37:40,248 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:37:40,282 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:37:40,302 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:37:40,333 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:37:40,360 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:37:40,361 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:39:01,846 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:39:01,908 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:39:01,917 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:39:01,945 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:39:01,966 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:39:01,967 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:43:55,128 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:43:55,185 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:43:55,203 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:43:55,236 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:43:55,269 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:43:55,269 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:43:55,344 - bharat_voice_assistant.voice.speech_recognition - ERROR - Error checking transcription job status: Transcription job failed: Audio quality too poor
+2026-01-26 02:43:55,344 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job failed: Audio quality too poor
+2026-01-26 02:43:55,349 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job timed out
+2026-01-26 02:45:32,713 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:45:32,734 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:45:32,742 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:45:32,747 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:45:32,756 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:45:32,756 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:46:19,198 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:46:19,253 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:46:19,262 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:46:19,283 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:46:19,304 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:46:19,304 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:47:29,387 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:47:29,446 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:47:29,468 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:47:29,485 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:47:29,510 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:47:29,511 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:47:43,172 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:47:43,228 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:47:43,257 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:47:43,275 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:47:43,320 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:47:43,320 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:47:43,396 - bharat_voice_assistant.voice.speech_recognition - ERROR - Error checking transcription job status: Transcription job failed: Audio quality too poor
+2026-01-26 02:47:43,396 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job failed: Audio quality too poor
+2026-01-26 02:47:43,401 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job timed out
+2026-01-26 02:49:05,531 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:49:05,594 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:49:05,602 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:49:05,623 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:49:05,651 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:49:05,651 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:49:05,732 - bharat_voice_assistant.voice.speech_recognition - ERROR - Error checking transcription job status: Transcription job failed: Audio quality too poor
+2026-01-26 02:49:05,733 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job failed: Audio quality too poor
+2026-01-26 02:49:05,738 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job timed out
+2026-01-26 02:49:05,912 - bharat_voice_assistant.voice.gateway - ERROR - Error processing voice input for client rural-client: 'Mock' object can't be awaited
+2026-01-26 02:50:05,843 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:50:05,923 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:50:05,952 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:50:05,992 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:50:06,008 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:50:06,008 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:51:57,488 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:51:57,538 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:51:57,547 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:51:57,552 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:51:57,596 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:51:57,597 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:51:57,675 - bharat_voice_assistant.voice.speech_recognition - ERROR - Error checking transcription job status: Transcription job failed: Audio quality too poor
+2026-01-26 02:51:57,675 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job failed: Audio quality too poor
+2026-01-26 02:51:57,680 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job timed out
+2026-01-26 02:54:57,037 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:54:57,093 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:54:57,129 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:54:57,169 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:54:57,221 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:54:57,221 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:59:57,931 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 02:59:57,969 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 02:59:57,991 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 02:59:57,996 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 02:59:58,004 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 02:59:58,004 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 02:59:58,082 - bharat_voice_assistant.voice.speech_recognition - ERROR - Error checking transcription job status: Transcription job failed: Audio quality too poor
+2026-01-26 02:59:58,082 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job failed: Audio quality too poor
+2026-01-26 02:59:58,087 - bharat_voice_assistant.voice.speech_recognition - ERROR - Real-time recognition failed: Transcription job timed out
+2026-01-26 03:07:41,363 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 03:07:41,385 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 03:07:41,405 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 03:07:41,411 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 03:07:41,451 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 03:07:41,452 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 03:07:41,692 - bharat_voice_assistant.voice.text_to_speech - ERROR - Polly synthesis failed: No audio stream returned from Polly
+2026-01-26 03:07:41,837 - bharat_voice_assistant.voice.text_to_speech - ERROR - Voice synthesis test failed for Aditi: Test error
+2026-01-26 03:08:33,452 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-26 03:08:33,509 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-26 03:08:33,517 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-26 03:08:33,539 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-26 03:08:33,550 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-26 03:08:33,550 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-26 03:08:33,643 - bharat_voice_assistant.voice.text_to_speech - ERROR - Polly synthesis failed: No audio stream returned from Polly
+2026-01-26 03:08:33,681 - bharat_voice_assistant.voice.text_to_speech - ERROR - Voice synthesis test failed for Aditi: Test error
