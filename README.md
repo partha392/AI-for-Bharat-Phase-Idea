@@ -291,7 +291,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Issues**: [GitHub Issues](https://github.com/bharatvoice/bharat-voice-assistant/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/bharatvoice/bharat-voice-assistant/discussions)
-- **Email**: team@bharatvoice.gov.in
 
 ---
 
