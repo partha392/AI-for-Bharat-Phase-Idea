@@ -241,14 +241,14 @@ This implementation plan breaks down the Bharat Voice Assistant into discrete co
     - Validate performance requirements under various conditions
     - _Requirements: All requirements_
 
-  - [-] 15.2 Validate system requirements compliance
+  - [x] 15.2 Validate system requirements compliance
     - Verify all 10 requirements are fully implemented
     - Test multilingual support across all 10 required languages
     - Validate low-bandwidth operation and offline capabilities
     - Confirm privacy protection and data handling compliance
     - _Requirements: All requirements_
 
-- [ ] 16. Final checkpoint - Ensure all tests pass
+- [x] 16. Final checkpoint - Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
 ## Notes

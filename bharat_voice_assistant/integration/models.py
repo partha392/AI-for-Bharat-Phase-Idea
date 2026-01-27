@@ -382,7 +382,9 @@ class AuthToken:
         """Check if token is expired."""
         if not self.expires_at:
             return False
-        return datetime.now() >= self.expires_at
+        # Use utcnow for consistency with token creation
+        from datetime import datetime
+        return datetime.utcnow() >= self.expires_at
     
     def is_valid(self) -> bool:
         """Check if token is valid."""

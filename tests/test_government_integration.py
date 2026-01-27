@@ -124,10 +124,12 @@ class TestGovernmentPortalModels:
     
     def test_auth_token_validation(self):
         """Test AuthToken validation and expiration."""
+        from datetime import datetime, timedelta
+        
         # Valid token
         token = AuthToken(
             token="valid_token_123",
-            expires_at=datetime.now() + timedelta(hours=1)
+            expires_at=datetime.utcnow() + timedelta(hours=1)
         )
         
         assert token.is_valid() is True
@@ -136,7 +138,7 @@ class TestGovernmentPortalModels:
         # Expired token
         expired_token = AuthToken(
             token="expired_token",
-            expires_at=datetime.now() - timedelta(hours=1)
+            expires_at=datetime.utcnow() - timedelta(hours=1)
         )
         
         assert expired_token.is_valid() is False

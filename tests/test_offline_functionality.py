@@ -6,6 +6,7 @@ components to ensure proper offline functionality implementation.
 """
 
 import pytest
+import pytest_asyncio
 import asyncio
 import time
 import json
@@ -34,7 +35,7 @@ from bharat_voice_assistant.core.exceptions import (
 class TestCacheManager:
     """Test cases for CacheManager."""
     
-    @pytest.fixture
+    @pytest_asyncio.fixture
     async def cache_manager(self):
         """Create a test cache manager."""
         temp_dir = tempfile.mkdtemp()
@@ -47,7 +48,10 @@ class TestCacheManager:
         await manager.start()
         yield manager
         await manager.stop()
-        shutil.rmtree(temp_dir)
+        try:
+            shutil.rmtree(temp_dir)
+        except (OSError, PermissionError):
+            pass  # Ignore cleanup errors on Windows
     
     @pytest.mark.asyncio
     async def test_cache_set_and_get(self, cache_manager):
@@ -173,7 +177,7 @@ class TestCacheManager:
 class TestRequestQueue:
     """Test cases for RequestQueue."""
     
-    @pytest.fixture
+    @pytest_asyncio.fixture
     async def request_queue(self):
         """Create a test request queue."""
         temp_dir = tempfile.mkdtemp()
@@ -185,7 +189,10 @@ class TestRequestQueue:
         await queue.start()
         yield queue
         await queue.stop()
-        shutil.rmtree(temp_dir)
+        try:
+            shutil.rmtree(temp_dir)
+        except (OSError, PermissionError):
+            pass  # Ignore cleanup errors on Windows
     
     @pytest.mark.asyncio
     async def test_enqueue_request(self, request_queue):
@@ -285,11 +292,11 @@ class TestRequestQueue:
             request_type="test_request",
             endpoint="/api/test",
             payload={"data": "test"},
-            expires_in_hours=0.001  # Very short expiration
+            expires_in_hours=0.0003  # Very short expiration (about 1 second)
         )
         
         # Wait for expiration
-        await asyncio.sleep(1)
+        await asyncio.sleep(1.5)  # Wait a bit longer to ensure expiration
         
         # Trigger cleanup
         await request_queue._cleanup_expired_requests()
@@ -303,7 +310,7 @@ class TestRequestQueue:
 class TestOfflineManager:
     """Test cases for OfflineManager."""
     
-    @pytest.fixture
+    @pytest_asyncio.fixture
     async def offline_manager(self):
         """Create a test offline manager."""
         manager = OfflineManager()
@@ -393,7 +400,7 @@ class TestOfflineManager:
 class TestOfflineIntegration:
     """Test cases for OfflineIntegration."""
     
-    @pytest.fixture
+    @pytest_asyncio.fixture
     async def offline_integration(self):
         """Create a test offline integration."""
         config = OfflineConfig(
