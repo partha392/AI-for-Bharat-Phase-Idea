@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\accessibility\__init__.py
+# hypothesis_version: 6.151.0
+
+['ConfusionDetector', 'ConsistentCommands', 'HelpProvider', 'MultiModalInterface', 'UserAssistanceSystem', 'UserFriendlyErrors', 'VocabularySimplifier']

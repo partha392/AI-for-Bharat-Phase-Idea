@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\language\context_manager.py
+# hypothesis_version: 6.151.0
+
+['completed', 'confidence', 'confirmation', 'conversation', 'conversation_id', 'created_at', 'current_intent', 'current_state', 'document_collection', 'entities', 'error', 'grievance_filing', 'hi', 'initial', 'intent', 'language', 'last_updated', 'metadata', 'persistent_data', 'persistent_data_keys', 'recent_entities', 'scheme_discovery', 'session', 'session_id', 'state', 'status_tracking', 'system_response', 'temporary', 'temporary_data', 'temporary_data_keys', 'time_since_update', 'timestamp', 'turn_count', 'turn_id', 'turns', 'unknown', 'user', 'user_id', 'user_input']

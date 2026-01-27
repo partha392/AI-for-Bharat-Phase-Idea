@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\core\aws_client.py
+# hypothesis_version: 6.151.0
+
+[128, 'Code', 'ENVIRONMENT', 'Error', 'Message', 'Test text', 'Unknown', 'adaptive', 'ap-south-1', 'ap-south-2', 'ap-southeast-1', 'apigateway', 'args', 'cloudwatch', 'comprehend', 'config', 'dynamodb', 'error', 'error_code', 'error_message', 'errors', 'hi-IN', 'kwargs', 'lambda', 'max_attempts', 'mode', 'operation', 'polly', 's3', 'service', 'services', 'sts', 'test', 'transcribe', 'us-east-1', 'valid', 'warnings']

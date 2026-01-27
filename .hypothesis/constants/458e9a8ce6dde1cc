@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\schemes\user_profile.py
+# hypothesis_version: 6.151.0
+
+[0.0, 180, '__dict__', 'created_at', 'demographics', 'economic', 'hi', 'interaction_history', 'location', 'preferences', 'profile_version', 'standard', 'unknown', 'updated_at', 'user_id', 'voice']

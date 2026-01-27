@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\core\cache_manager.py
+# hypothesis_version: 6.151.0
+
+[0.0, 100, 300, 500, 1024, 1800, 3600, 7200, '*', '*.cache', 'CacheManager started', 'CacheManager stopped', 'cache', 'cache.db', 'cached_at', 'count', 'created_at', 'database', 'fifo', 'file', 'hi', 'hybrid', 'intent', 'language', 'lfu', 'lru', 'memory', 'metadata', 'rb', 'responses', 'schemes', 'schemes_all', 'ttl', 'ttl_seconds', 'type', 'user_data', 'user_id', 'user_profile_hash', 'value', 'wb']

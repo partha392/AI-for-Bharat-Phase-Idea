@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\schemes\scheme_discovery.py
+# hypothesis_version: 6.151.0
+
+[0.4, 0.6, 0.7, 0.8, 500, 1000, 100000, '...', '_', '__dict__', 'active', 'age', 'agriculture_query', 'caste_category', 'category', 'demographics', 'disability_status', 'discovered', 'district', 'economic', 'education', 'education_level', 'education_query', 'employment_status', 'family_size', 'farming', 'gender', 'health', 'health_query', 'hi', 'high', 'house', 'housing_query', 'housing_status', 'income', 'interaction_history', 'land_ownership', 'location', 'location_type', 'low', 'marital_status', 'match_score', 'medium', 'occupation', 'offline', 'online', 'preferences', 'preferred_categories', 'query', 'rank', 'scheme_search', 'state', 'status', 'type', 'unknown', 'user_id']

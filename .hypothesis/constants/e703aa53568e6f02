@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\grievance\validator.py
+# hypothesis_version: 6.151.0
+
+[0.0, 100.0, 120, 2000, '6789', 'Address is too short', 'Unsupported language', '[\\s\\-\\(\\)]', '\\d', '^[A-Z0-9]{6,}$', 'address', 'address_proof', 'age', 'application_receipt', 'bank_details', 'bank_passbook', 'bn', 'contact_info', 'contact_information', 'contact_method', 'correspondence', 'document_number', 'documents', 'email', 'en', 'error', 'evidence_documents', 'existing_document', 'general', 'grievance_details', 'grievance_type', 'gu', 'hi', 'identity_proof', 'incident_date', 'kn', 'language', 'location', 'location_proof', 'max_length', 'min_length', 'ml', 'mr', 'pa', 'pattern', 'patterns', 'pension_card', 'phone', 'phone_number', 'photographs', 'problem_description', 'ration_card', 'reference_number', 'required', 'scheme_documents', 'session_id', 'sms', 'ta', 'te', 'warning']

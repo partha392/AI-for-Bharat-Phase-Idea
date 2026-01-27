@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\integration\config_loader.py
+# hypothesis_version: 6.151.0
+
+[1.0, 200, 201, 202, '*.json', '*.yaml', '10', '30', '300', '5', '60', 'Base URL is required', 'PORTAL_', 'POST', '_CONFIG', 'additional_headers', 'api_key', 'api_key_env', 'auth_method', 'base_url', 'certificate_path', 'client_id', 'client_secret', 'client_secret_env', 'credentials', 'data_format', 'district_code', 'en', 'endpoints', 'exponential_backoff', 'headers', 'hi', 'http://', 'https://', 'id', 'is_active', 'json', 'max_retries', 'metadata', 'method', 'name', 'optional_fields', 'password', 'password_env', 'portals', 'priority', 'private_key_path', 'r', 'rate_limit', 'required_fields', 'response_format', 'retry_delay', 'scope', 'state_code', 'success_codes', 'supported_languages', 'timeout', 'token_endpoint', 'true', 'type', 'url', 'username', 'utf-8', 'w']

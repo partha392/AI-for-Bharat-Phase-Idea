@@ -223,26 +223,15 @@ async def metrics_endpoint() -> Dict[str, Any]:
 from .voice_routes import router as voice_router
 app.include_router(voice_router)
 
+# Include grievance routes
+from .grievance_routes import router as grievance_router
+app.include_router(grievance_router)
+
 # Placeholder endpoints for future implementation
 @app.get("/schemes/search")
 async def search_schemes():
     """Search government schemes (placeholder)."""
     return {"message": "Scheme search endpoint - to be implemented"}
-
-
-@app.post("/grievances/file")
-async def file_grievance():
-    """File a grievance (placeholder)."""
-    return {"message": "Grievance filing endpoint - to be implemented"}
-
-
-@app.get("/grievances/{reference_number}/status")
-async def get_grievance_status(reference_number: str):
-    """Get grievance status (placeholder)."""
-    return {
-        "reference_number": reference_number,
-        "message": "Grievance status endpoint - to be implemented"
-    }
 
 
 if __name__ == "__main__":

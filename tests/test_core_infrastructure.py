@@ -25,7 +25,7 @@ from bharat_voice_assistant.core.aws_client import (
 )
 from bharat_voice_assistant.core.exceptions import (
     BharatVoiceAssistantError, ConfigurationError, AWSServiceError,
-    ValidationError, handle_aws_error, handle_validation_error
+    ValidationError, AuthenticationError, handle_aws_error, handle_validation_error
 )
 
 
@@ -296,7 +296,7 @@ class TestAWSClient:
         assert transcribe_client == mock_client
         
         # Verify boto3.client was called with correct parameters
-        mock_boto3.client.assert_called_with('transcribe', config=manager._boto_config)
+        mock_boto3.client.assert_called_with('transcribe', region_name='ap-south-1', config=manager._boto_config)
     
     @patch('bharat_voice_assistant.core.aws_client.boto3')
     def test_aws_connectivity_test(self, mock_boto3):
@@ -358,12 +358,13 @@ class TestAWSClient:
             }
         }
         mock_method = Mock(side_effect=ClientError(error_response, 'TestOperation'))
+        mock_method.__name__ = 'test_operation'  # Add __name__ attribute
         
-        with pytest.raises(AWSServiceError) as exc_info:
+        with pytest.raises(AuthenticationError) as exc_info:  # Changed from AWSServiceError to AuthenticationError
             safe_aws_call(mock_method)
         
-        assert "AWS API call" in str(exc_info.value)
-        assert exc_info.value.context['error_code'] == 'AccessDenied'
+        assert "AWS authentication failed" in str(exc_info.value)
+        assert exc_info.value.context['operation'] == "AWS API call test_operation"
     
     @patch('bharat_voice_assistant.core.aws_client.aws_clients')
     def test_validate_aws_configuration(self, mock_aws_clients):

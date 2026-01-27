@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\integration\auth_manager.py
+# hypothesis_version: 6.151.0
+
+[200, 'AUTH_HEADER_ERROR', 'Authorization', 'Bearer', 'Content-Type', 'JWT_GENERATION_ERROR', 'MISSING_ACCESS_TOKEN', 'MISSING_API_KEY', 'MISSING_CERTIFICATE', 'OAUTH2_NETWORK_ERROR', 'OAUTH2_TOKEN_ERROR', 'RS256', 'RSA-PSS-SHA256', 'X-API-Key', 'X-Client-Certificate', 'X-Client-ID', 'X-Nonce', 'X-Signature', 'X-Timestamp', 'access_token', 'aud', 'client_credentials', 'client_id', 'client_secret', 'created_at', 'exp', 'expires_at', 'expires_in', 'government-api', 'grant_type', 'iat', 'is_expired', 'is_valid', 'iss', 'jti', 'rb', 'refresh_token', 'scope', 'sub', 'token_type']

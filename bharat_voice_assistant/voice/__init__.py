@@ -29,6 +29,25 @@ from .text_to_speech import (
     SpeechRate,
     VoiceEngine
 )
+from .bandwidth_optimizer import (
+    BandwidthOptimizer,
+    CompressionLevel,
+    ContentPriority,
+    CompressionSettings,
+    ProgressiveChunk,
+    BandwidthProfile
+)
+from .audio_enhancements import (
+    AudioEnhancementSystem,
+    AdvancedNoiseCancellation,
+    AutoVolumeClarity,
+    ResponseTimeOptimizer,
+    SpeakingPaceAdapter,
+    AudioEnhancementConfig,
+    SpeakingPaceProfile,
+    NoiseType,
+    AudioQuality
+)
 
 __all__ = [
     "VoiceInterfaceGateway",
@@ -46,5 +65,20 @@ __all__ = [
     "VoiceGender",
     "AudioFormat",
     "SpeechRate",
-    "VoiceEngine"
+    "VoiceEngine",
+    "BandwidthOptimizer",
+    "CompressionLevel",
+    "ContentPriority",
+    "CompressionSettings",
+    "ProgressiveChunk",
+    "BandwidthProfile",
+    "AudioEnhancementSystem",
+    "AdvancedNoiseCancellation",
+    "AutoVolumeClarity",
+    "ResponseTimeOptimizer",
+    "SpeakingPaceAdapter",
+    "AudioEnhancementConfig",
+    "SpeakingPaceProfile",
+    "NoiseType",
+    "AudioQuality"
 ]

@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\voice\__init__.py
+# hypothesis_version: 6.151.0
+
+['AudioFormat', 'AudioProcessor', 'ConnectionManager', 'IndianVoice', 'LanguageModel', 'RecognitionConfig', 'RecognitionMode', 'RecognitionResult', 'SpeechRate', 'SpeechRecognizer', 'SynthesisConfig', 'SynthesisResult', 'VoiceEngine', 'VoiceGender']

@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\core\config.py
+# hypothesis_version: 6.151.0
+
+[0.7, 2.0, 128, 256, 5432, 'AES-256-GCM', 'AWS_ACCESS_KEY_ID', 'AWS_REGION', 'AWS_SESSION_TOKEN', 'Aditi', 'DB_HOST', 'DB_NAME', 'DB_PASSWORD', 'DB_PORT', 'DB_USER', 'ENVIRONMENT', 'ap-south-1', 'aws_access_key_id', 'aws_session_token', 'bharat-schemes-data', 'bharat-voice-data', 'bn', 'bn-IN', 'development', 'en', 'en-IN', 'excellent', 'good', 'gu', 'gu-IN', 'hi', 'hi-IN', 'kn', 'kn-IN', 'localhost', 'medium', 'ml', 'ml-IN', 'mp3', 'mr', 'mr-IN', 'pa', 'pa-IN', 'poor', 'postgres', 'prefer', 'production', 'region_name', 'slow', 'ta', 'ta-IN', 'te', 'te-IN', 'very_poor']

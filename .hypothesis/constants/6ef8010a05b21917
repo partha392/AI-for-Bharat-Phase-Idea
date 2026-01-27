@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\privacy\encryption_service.py
+# hypothesis_version: 6.151.0
+
+[100000, 'BHARAT_MASTER_KEY', 'DECRYPTION_FAILED', 'ENCRYPTION_FAILED', 'INVALID_MASTER_KEY', 'component', 'data_type', 'decrypt', 'decrypted_size', 'delete_key', 'encrypt', 'encrypted_size', 'encryption_service', 'error', 'key_id', 'operation', 'original_size', 'rotate_master_key', 'utf-8']

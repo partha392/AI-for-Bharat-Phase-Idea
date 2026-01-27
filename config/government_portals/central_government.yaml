@@ -1,0 +1,122 @@
+# Central Government Portal Configuration
+# This file contains configuration for central government grievance portals
+
+portals:
+  - id: "pgportal_central"
+    name: "Public Grievance Portal - Central Government"
+    type: "central_government"
+    base_url: "https://pgportal.gov.in/api/v1"
+    is_active: true
+    priority: 1
+    supported_languages: ["hi", "en", "ta", "te", "bn", "mr", "gu", "kn", "ml", "pa"]
+    rate_limit: 100  # requests per minute
+    
+    credentials:
+      auth_method: "api_key"
+      api_key_env: "PGPORTAL_API_KEY"
+      additional_headers:
+        "X-Client-Version": "1.0"
+        "X-Source-System": "bharat-voice-assistant"
+    
+    endpoints:
+      - name: "submit_grievance"
+        url: "/grievances/submit"
+        method: "POST"
+        data_format: "json"
+        response_format: "json"
+        timeout: 30
+        max_retries: 3
+        retry_delay: 2.0
+        required_fields:
+          - "complaint_description"
+          - "category_code"
+          - "mobile_number"
+          - "address"
+        optional_fields:
+          - "email_id"
+          - "preferred_language"
+          - "urgency_level"
+          - "documents"
+        success_codes: [200, 201, 202]
+        headers:
+          "Content-Type": "application/json"
+          "Accept": "application/json"
+      
+      - name: "check_status"
+        url: "/grievances/status/{reference_number}"
+        method: "GET"
+        response_format: "json"
+        timeout: 15
+        max_retries: 2
+        success_codes: [200]
+        headers:
+          "Accept": "application/json"
+      
+      - name: "update_grievance"
+        url: "/grievances/{reference_number}/update"
+        method: "PUT"
+        data_format: "json"
+        response_format: "json"
+        timeout: 30
+        max_retries: 2
+        optional_fields:
+          - "additional_info"
+          - "documents"
+        success_codes: [200, 202]
+    
+    metadata:
+      description: "Central government portal for public grievances"
+      contact_email: "support@pgportal.gov.in"
+      documentation_url: "https://pgportal.gov.in/api/docs"
+      service_hours: "24x7"
+      languages_supported: "All major Indian languages"
+
+  - id: "cpgrams_central"
+    name: "CPGRAMS - Centralized Public Grievance Redress and Monitoring System"
+    type: "central_government"
+    base_url: "https://cpgrams.gov.in/api/v2"
+    is_active: true
+    priority: 2
+    supported_languages: ["hi", "en"]
+    rate_limit: 50
+    
+    credentials:
+      auth_method: "oauth2"
+      client_id_env: "CPGRAMS_CLIENT_ID"
+      client_secret_env: "CPGRAMS_CLIENT_SECRET"
+      token_endpoint: "https://cpgrams.gov.in/oauth/token"
+      scope: "grievance:submit grievance:status"
+    
+    endpoints:
+      - name: "submit_grievance"
+        url: "/complaints/register"
+        method: "POST"
+        data_format: "json"
+        response_format: "json"
+        timeout: 45
+        max_retries: 3
+        retry_delay: 3.0
+        required_fields:
+          - "grievance_details"
+          - "grievance_category"
+          - "contact_number"
+          - "complainant_address"
+        optional_fields:
+          - "email_address"
+          - "preferred_language"
+          - "supporting_documents"
+        success_codes: [200, 201]
+      
+      - name: "check_status"
+        url: "/complaints/{reference_number}/status"
+        method: "GET"
+        response_format: "json"
+        timeout: 20
+        max_retries: 2
+        success_codes: [200]
+    
+    metadata:
+      description: "Centralized system for public grievance redress"
+      contact_email: "cpgrams-support@gov.in"
+      documentation_url: "https://cpgrams.gov.in/api-docs"
+      service_hours: "Monday to Friday, 9 AM to 6 PM"

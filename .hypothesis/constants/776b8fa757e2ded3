@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\privacy\models.py
+# hypothesis_version: 6.151.0
+
+['AES-256-GCM', 'analytics', 'analytics_data', 'conversation_history', 'data_processing', 'data_storage', 'denied', 'expired', 'granted', 'log_data', 'marketing', 'pending', 'personal_info', 'secure_delete', 'third_party_sharing', 'user_preferences', 'voice_recording', 'withdrawn']

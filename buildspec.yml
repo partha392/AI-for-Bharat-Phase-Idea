@@ -1,0 +1,70 @@
+version: 0.2
+
+env:
+  variables:
+    AWS_DEFAULT_REGION: ap-south-1
+    IMAGE_REPO_NAME: bharat-voice-assistant
+    IMAGE_TAG: latest
+
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+      - REPOSITORY_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME
+      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+      - IMAGE_TAG=${COMMIT_HASH:=latest}
+      - echo Installing dependencies...
+      - pip install --upgrade pip
+      - pip install -r requirements-dev.txt
+  
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Running tests...
+      - python -m pytest tests/ -v --cov=bharat_voice_assistant --cov-report=xml --cov-report=html
+      - echo Running security checks...
+      - bandit -r bharat_voice_assistant/ -f json -o bandit-report.json || true
+      - echo Running code quality checks...
+      - flake8 bharat_voice_assistant/ --output-file=flake8-report.txt || true
+      - echo Building the Docker image...
+      - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .
+      - docker tag $IMAGE_REPO_NAME:$IMAGE_TAG $REPOSITORY_URI:$IMAGE_TAG
+  
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      - docker push $REPOSITORY_URI:$IMAGE_TAG
+      - echo Writing image definitions file...
+      - printf '[{"name":"bharat-voice-assistant","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - cat imagedefinitions.json
+
+artifacts:
+  files:
+    - imagedefinitions.json
+    - '**/*'
+
+reports:
+  coverage-reports:
+    files:
+      - coverage.xml
+    base-directory: .
+    file-format: COBERTURAXML
+  
+  security-reports:
+    files:
+      - bandit-report.json
+    base-directory: .
+    file-format: OTHER
+  
+  quality-reports:
+    files:
+      - flake8-report.txt
+    base-directory: .
+    file-format: OTHER
+
+cache:
+  paths:
+    - '/root/.cache/pip/**/*'
+    - '/root/.cache/pytest_cache/**/*'

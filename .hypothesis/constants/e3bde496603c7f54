@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\core\offline_manager.py
+# hypothesis_version: 6.151.0
+
+[0.0, 64.0, 128.0, 256.0, 200, 500, 1000, 'QUEUE_FAILED', 'application_mode', 'available', 'basic_conversation', 'benefits', 'cache_only', 'cache_status', 'cache_updated', 'description', 'eligibility', 'en', 'error', 'errors', 'fallback_pm_kisan', 'fallback_ujjwala', 'feature_name', 'full_offline', 'greeting', 'grievance_filing', 'help', 'hi', 'hybrid', 'id', 'is_available', 'is_fallback', 'limited', 'message', 'name', 'offline', 'online', 'queue_requests', 'queued_at', 'queued_offline', 'requires_cache', 'responses_help_hi', 'scheme_discovery', 'schemes_all', 'size', 'status', 'status_inquiry', 'unknown', 'छोटे और सीमांत किसान', 'मुफ्त LPG कनेक्शन', 'स्वास्थ्य बीमा योजना', '₹6000 प्रति वर्ष']

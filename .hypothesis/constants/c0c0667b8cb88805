@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\schemes\__init__.py
+# hypothesis_version: 6.151.0
+
+['DemographicInfo', 'DiscoveryQuery', 'DocumentStatus', 'EconomicInfo', 'EligibilityAssessor', 'EligibilityStatus', 'GovernmentScheme', 'InteractionRecord', 'LocationInfo', 'MatchScore', 'SchemeCategorizer', 'SchemeCategory', 'SchemeManager', 'SchemeRecommendation', 'SchemeStatus', 'SchemeValidator', 'UserProfile', 'UserProfileManager']

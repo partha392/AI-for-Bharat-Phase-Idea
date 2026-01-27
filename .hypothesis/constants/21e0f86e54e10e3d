@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\privacy\data_retention_manager.py
+# hypothesis_version: 6.151.0
+
+[365, 'User request', 'anonymize', 'anonymized', 'anonymized_at', 'auto_delete', 'completed', 'completed_at', 'component', 'created_at', 'data_deleted', 'data_id', 'data_location', 'data_type', 'data_types', 'deadline', 'delete_data_item', 'deleted_count', 'deleted_items', 'deletion_method', 'deletion_scheduled', 'details', 'encryption_metadata', 'failed', 'in_progress', 'log_id', 'metadata', 'newest_item', 'oldest_item', 'operation', 'pending', 'process_deletions', 'processing_completed', 'r+b', 'reason', 'register_data', 'request_deletion', 'request_id', 'scheduled_deletions', 'secure_delete', 'timestamp', 'total_items', 'user_id']

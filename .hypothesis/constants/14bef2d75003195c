@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\privacy\consent_manager.py
+# hypothesis_version: 6.151.0
+
+[365, 'CONSENT_NOT_FOUND', 'auto_collected', 'automatic', 'cleanup_expired', 'collect_consent', 'collection_method', 'component', 'consent_granted', 'consent_id', 'consent_manager', 'consent_type', 'consent_withdrawn', 'consents', 'data_type', 'data_types', 'expires_at', 'explicit_required', 'exported_at', 'granted_at', 'metadata', 'operation', 'purpose', 'reason', 'require_consent', 'status', 'user_id', 'withdraw_consent', 'withdrawal_reason', 'withdrawn_at']

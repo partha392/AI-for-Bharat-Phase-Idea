@@ -1,0 +1,55 @@
+2026-01-27 20:53:24,775 - bharat_voice_assistant.core.logging - INFO - Logging initialized with level INFO and format simple
+2026-01-27 20:53:25,569 - bharat_voice_assistant.core.aws_client - INFO - Initializing AWS clients...
+2026-01-27 20:53:25,660 - bharat_voice_assistant.core.aws_client - INFO - Created AWS sts client
+2026-01-27 20:53:25,661 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-27 20:53:25,679 - bharat_voice_assistant.core.aws_client - INFO - Created AWS s3 client
+2026-01-27 20:53:25,681 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-27 20:53:25,727 - bharat_voice_assistant.core.aws_client - INFO - Created AWS transcribe client
+2026-01-27 20:53:25,728 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-27 20:53:25,758 - bharat_voice_assistant.core.aws_client - INFO - Created AWS polly client
+2026-01-27 20:53:25,759 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-27 20:53:25,793 - bharat_voice_assistant.core.aws_client - INFO - Created AWS comprehend client
+2026-01-27 20:53:25,794 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-27 20:53:25,794 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-27 20:53:25,795 - bharat_voice_assistant.core.aws_client - WARNING - AWS configuration warning: AWS credentials not configured (using IAM role or environment)
+2026-01-27 20:53:25,800 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-27 20:53:25,808 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity assessment failed: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:25,809 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity score 0.50 below threshold, reducing compression
+2026-01-27 20:53:25,820 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:25,829 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity assessment failed: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:25,829 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity score 0.50 below threshold, reducing compression
+2026-01-27 20:53:25,840 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:25,849 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity assessment failed: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:25,849 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity score 0.50 below threshold, reducing compression
+2026-01-27 20:53:25,861 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:25,895 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:25,903 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity assessment failed: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:25,903 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity score 0.50 below threshold, reducing compression
+2026-01-27 20:53:25,912 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:25,943 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:25,950 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity assessment failed: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:25,951 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity score 0.50 below threshold, reducing compression
+2026-01-27 20:53:25,960 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:25,962 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-27 20:53:29,023 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-27 20:53:29,025 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-27 20:53:29,046 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,053 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity assessment failed: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,053 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity score 0.50 below threshold, reducing compression
+2026-01-27 20:53:29,062 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,084 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,090 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity assessment failed: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,091 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity score 0.50 below threshold, reducing compression
+2026-01-27 20:53:29,100 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,110 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,118 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity assessment failed: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,118 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity score 0.50 below threshold, reducing compression
+2026-01-27 20:53:29,128 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,137 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity assessment failed: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,138 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity score 0.50 below threshold, reducing compression
+2026-01-27 20:53:29,139 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-27 20:53:29,172 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,180 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity assessment failed: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,180 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity score 0.50 below threshold, reducing compression
+2026-01-27 20:53:29,189 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified
+2026-01-27 20:53:29,220 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Compression failed, returning original: [WinError 2] The system cannot find the file specified

@@ -132,6 +132,36 @@ class SchemeDataError(SchemeDiscoveryError):
     pass
 
 
+class SchemeManagerError(SchemeDiscoveryError):
+    """Raised when scheme management operations fail."""
+    pass
+
+
+class SchemeMatchingError(SchemeDiscoveryError):
+    """Raised when scheme matching operations fail."""
+    pass
+
+
+class UserProfileError(SchemeDiscoveryError):
+    """Raised when user profile operations fail."""
+    pass
+
+
+class EligibilityAssessmentError(SchemeDiscoveryError):
+    """Raised when eligibility assessment operations fail."""
+    pass
+
+
+class CategorizationError(SchemeDiscoveryError):
+    """Raised when scheme categorization fails."""
+    pass
+
+
+class IngestionError(SchemeDiscoveryError):
+    """Raised when scheme ingestion fails."""
+    pass
+
+
 # Grievance Management Errors
 class GrievanceError(BharatVoiceAssistantError):
     """Base class for grievance management errors."""
@@ -150,6 +180,16 @@ class GrievanceValidationError(GrievanceError):
 
 class GrievanceStatusError(GrievanceError):
     """Raised when grievance status operations fail."""
+    pass
+
+
+class WorkflowError(GrievanceError):
+    """Raised when workflow operations fail."""
+    pass
+
+
+class NotificationError(GrievanceError):
+    """Raised when notification operations fail."""
     pass
 
 
@@ -251,6 +291,84 @@ class TimeoutError(BharatVoiceAssistantError):
 
 class ResponseTimeoutError(TimeoutError):
     """Raised when response times exceed acceptable limits."""
+    pass
+
+
+# Cache Management Errors
+class CacheError(BharatVoiceAssistantError):
+    """Base class for cache-related errors."""
+    pass
+
+
+class CacheNotFoundError(CacheError):
+    """Raised when requested cache entry is not found."""
+    pass
+
+
+class CacheStorageError(CacheError):
+    """Raised when cache storage operations fail."""
+    pass
+
+
+class CacheEvictionError(CacheError):
+    """Raised when cache eviction operations fail."""
+    pass
+
+
+class CacheSizeExceededError(CacheError):
+    """Raised when cache size limits are exceeded."""
+    pass
+
+
+# Request Queue Errors
+class QueueError(BharatVoiceAssistantError):
+    """Base class for request queue errors."""
+    pass
+
+
+class QueueFullError(QueueError):
+    """Raised when request queue is full."""
+    pass
+
+
+class RequestNotFoundError(QueueError):
+    """Raised when queued request is not found."""
+    pass
+
+
+class RequestProcessingError(QueueError):
+    """Raised when request processing fails."""
+    pass
+
+
+class RequestExpiredError(QueueError):
+    """Raised when queued request has expired."""
+    pass
+
+
+# Offline Functionality Errors
+class OfflineError(BharatVoiceAssistantError):
+    """Base class for offline functionality errors."""
+    pass
+
+
+class OfflineFeatureUnavailableError(OfflineError):
+    """Raised when requested feature is not available offline."""
+    pass
+
+
+class OfflineDataError(OfflineError):
+    """Raised when offline data is corrupted or unavailable."""
+    pass
+
+
+class SynchronizationError(OfflineError):
+    """Raised when offline-to-online synchronization fails."""
+    pass
+
+
+class ConnectivityError(OfflineError):
+    """Raised when connectivity detection fails."""
     pass
 
 

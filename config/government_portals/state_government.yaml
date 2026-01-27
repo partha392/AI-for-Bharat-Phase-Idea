@@ -1,0 +1,212 @@
+# State Government Portal Configuration
+# This file contains configuration for state government grievance portals
+
+portals:
+  - id: "maharashtra_grievance"
+    name: "Maharashtra State Grievance Portal"
+    type: "state_government"
+    base_url: "https://grievances.maharashtra.gov.in/api/v1"
+    state_code: "MH"
+    is_active: true
+    priority: 1
+    supported_languages: ["hi", "en", "mr"]
+    rate_limit: 60
+    
+    credentials:
+      auth_method: "api_key"
+      api_key_env: "MAHARASHTRA_API_KEY"
+      additional_headers:
+        "X-State-Code": "MH"
+        "X-Client-System": "bharat-voice-assistant"
+    
+    endpoints:
+      - name: "submit_grievance"
+        url: "/complaints/create"
+        method: "POST"
+        data_format: "json"
+        response_format: "json"
+        timeout: 30
+        max_retries: 3
+        retry_delay: 2.0
+        required_fields:
+          - "grievance_details"
+          - "grievance_category"
+          - "contact_number"
+          - "district"
+        optional_fields:
+          - "email_address"
+          - "preferred_language"
+          - "urgency_level"
+          - "taluka"
+          - "village"
+        success_codes: [200, 201]
+      
+      - name: "check_status"
+        url: "/complaints/{reference_number}"
+        method: "GET"
+        response_format: "json"
+        timeout: 15
+        max_retries: 2
+        success_codes: [200]
+    
+    metadata:
+      description: "Maharashtra state government grievance portal"
+      contact_email: "grievances@maharashtra.gov.in"
+      service_hours: "24x7"
+
+  - id: "uttar_pradesh_grievance"
+    name: "Uttar Pradesh Grievance Portal"
+    type: "state_government"
+    base_url: "https://jansunwai.up.gov.in/api/v1"
+    state_code: "UP"
+    is_active: true
+    priority: 1
+    supported_languages: ["hi", "en"]
+    rate_limit: 40
+    
+    credentials:
+      auth_method: "basic_auth"
+      username_env: "UP_PORTAL_USERNAME"
+      password_env: "UP_PORTAL_PASSWORD"
+      additional_headers:
+        "X-State": "UP"
+    
+    endpoints:
+      - name: "submit_grievance"
+        url: "/grievances/submit"
+        method: "POST"
+        data_format: "json"
+        response_format: "json"
+        timeout: 35
+        max_retries: 3
+        retry_delay: 2.5
+        required_fields:
+          - "complaint_text"
+          - "category"
+          - "mobile"
+          - "district_name"
+        optional_fields:
+          - "email"
+          - "language_preference"
+          - "tehsil"
+          - "block"
+        success_codes: [200, 201, 202]
+      
+      - name: "check_status"
+        url: "/grievances/status"
+        method: "POST"
+        data_format: "json"
+        response_format: "json"
+        timeout: 20
+        max_retries: 2
+        required_fields:
+          - "reference_number"
+        success_codes: [200]
+    
+    metadata:
+      description: "Uttar Pradesh Jan Sunwai portal"
+      contact_email: "support@jansunwai.up.gov.in"
+      service_hours: "Monday to Saturday, 10 AM to 5 PM"
+
+  - id: "tamil_nadu_grievance"
+    name: "Tamil Nadu Chief Minister's Helpline"
+    type: "state_government"
+    base_url: "https://cm.tn.gov.in/api/v1"
+    state_code: "TN"
+    is_active: true
+    priority: 1
+    supported_languages: ["ta", "en", "hi"]
+    rate_limit: 30
+    
+    credentials:
+      auth_method: "jwt_token"
+      client_id_env: "TN_CLIENT_ID"
+      private_key_path: "/etc/ssl/certs/tn_portal_private.pem"
+      token_endpoint: "https://cm.tn.gov.in/auth/token"
+    
+    endpoints:
+      - name: "submit_grievance"
+        url: "/helpline/complaints"
+        method: "POST"
+        data_format: "json"
+        response_format: "json"
+        timeout: 30
+        max_retries: 3
+        retry_delay: 2.0
+        required_fields:
+          - "complaint_description"
+          - "complaint_type"
+          - "phone_number"
+          - "district_code"
+        optional_fields:
+          - "email_id"
+          - "language_code"
+          - "priority_level"
+          - "attachments"
+        success_codes: [200, 201]
+      
+      - name: "check_status"
+        url: "/helpline/complaints/{reference_number}/status"
+        method: "GET"
+        response_format: "json"
+        timeout: 15
+        max_retries: 2
+        success_codes: [200]
+    
+    metadata:
+      description: "Tamil Nadu Chief Minister's Helpline portal"
+      contact_email: "cmhelpline@tn.gov.in"
+      service_hours: "24x7"
+      special_features: ["Multi-language support", "Priority handling"]
+
+  - id: "karnataka_grievance"
+    name: "Karnataka Sakala Services"
+    type: "state_government"
+    base_url: "https://sakala.karnataka.gov.in/api/v1"
+    state_code: "KA"
+    is_active: true
+    priority: 1
+    supported_languages: ["kn", "en", "hi"]
+    rate_limit: 50
+    
+    credentials:
+      auth_method: "digital_signature"
+      client_id_env: "KA_CLIENT_ID"
+      private_key_path: "/etc/ssl/certs/ka_portal_private.pem"
+      additional_headers:
+        "X-Digital-Signature-Version": "1.0"
+    
+    endpoints:
+      - name: "submit_grievance"
+        url: "/services/grievances"
+        method: "POST"
+        data_format: "json"
+        response_format: "json"
+        timeout: 40
+        max_retries: 3
+        retry_delay: 3.0
+        required_fields:
+          - "service_request_details"
+          - "service_category"
+          - "applicant_mobile"
+          - "applicant_district"
+        optional_fields:
+          - "applicant_email"
+          - "preferred_language"
+          - "service_priority"
+          - "supporting_docs"
+        success_codes: [200, 201, 202]
+      
+      - name: "check_status"
+        url: "/services/grievances/{reference_number}"
+        method: "GET"
+        response_format: "json"
+        timeout: 20
+        max_retries: 2
+        success_codes: [200]
+    
+    metadata:
+      description: "Karnataka Sakala e-governance services portal"
+      contact_email: "sakala@karnataka.gov.in"
+      service_hours: "24x7"
+      sla_commitment: "Response within 7 working days"

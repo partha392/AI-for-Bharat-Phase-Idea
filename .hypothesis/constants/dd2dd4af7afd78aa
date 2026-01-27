@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\core\exceptions.py
+# hypothesis_version: 6.151.0
+
+['AWS_AUTH_FAILED', 'AWS_RATE_LIMIT', 'AWS_SERVICE_ERROR', 'AWS_TIMEOUT', 'NETWORK_ERROR', 'VALIDATION_FAILED', 'access', 'context', 'credentials', 'error_code', 'error_type', 'expected', 'field', 'message', 'operation', 'original_error', 'rate', 'throttling', 'timeout', 'value']

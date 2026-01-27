@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\schemes\scheme_manager.py
+# hypothesis_version: 6.151.0
+
+['DATABASE_URL', 'active', 'active_schemes', 'approval_likelihood', 'changes', 'eligibility_match', 'estimated_benefit', 'explanation', 'hi', 'ingestion_stats', 'last_update', 'match_score', 'next_steps', 'processing_time_ms', 'rank', 'reason', 'recommendations', 'scheme', 'schemes_by_category', 'status', 'suggestions', 'system', 'timestamp', 'total_considered', 'total_schemes', 'updated_by', 'version']

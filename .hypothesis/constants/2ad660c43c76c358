@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\core\logging.py
+# hypothesis_version: 6.151.0
+
+[1000, 10485760, '()', '****AADHAAR****', '****EMAIL****', '****PAN****', '****PHONE****', '.', 'ERROR', 'INFO', 'WARNING', '\\b\\d{10}\\b', '\\b\\d{12}\\b', 'backupCount', 'boto3', 'botocore', 'class', 'component', 'console', 'default', 'duration_ms', 'encoding', 'error_file', 'error_rate', 'errors.log', 'exception', 'file', 'filename', 'format', 'formatter', 'formatters', 'function', 'handlers', 'language', 'level', 'line', 'logger', 'loggers', 'logs', 'maxBytes', 'message', 'metric_type', 'module', 'operation', 'password":"****"', 'performance.log', 'performance_file', 'propagate', 'request_id', 'requests_per_second', 'response_time', 'root', 'session_id', 'simple', 'stream', 'structured', 'test.log', 'throughput', 'timestamp', 'token":"****"', 'total_requests', 'traceback', 'type', 'user_id', 'utf-8', 'version']

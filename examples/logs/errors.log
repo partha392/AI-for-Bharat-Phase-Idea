@@ -1,0 +1,6 @@
+2026-01-27 20:53:25,661 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-27 20:53:25,681 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-27 20:53:25,728 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-27 20:53:25,759 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-27 20:53:25,794 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-27 20:53:25,794 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']

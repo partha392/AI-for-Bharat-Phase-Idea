@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\integration\government_api_client.py
+# hypothesis_version: 6.151.0
+
+[300, 500, 'Accept', 'CIRCUIT_BREAKER_OPEN', 'CLOSED', 'Content-Type', 'ENDPOINT_NOT_FOUND', 'GET', 'HALF_OPEN', 'NETWORK_ERROR', 'OPEN', 'POST', 'RATE_LIMIT_EXCEEDED', 'REQUEST_TIMEOUT', 'STATUS_CHECK_ERROR', 'SUBMISSION_ERROR', 'UNEXPECTED_ERROR', 'UNSUPPORTED_METHOD', 'Unknown error', 'User-Agent', 'application/json', 'application/xml', 'error_code', 'failure_count', 'item', 'last_failure_time', 'message', 'parse_error', 'raw_response', 'raw_xml', 'reference_id', 'reference_number', 'request', 'state', 'text', 'timestamp', 'unicode', '{reference_number}']

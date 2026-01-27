@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\language\language_processor.py
+# hypothesis_version: 6.151.0
+
+['application_help', 'completion_status', 'context_age', 'cultural_context', 'default', 'document_help', 'eligibility_check', 'email', 'en', 'entity_count', 'error_recovery', 'general_inquiry', 'government_service', 'grievance_filing', 'hi', 'in_progress', 'intent_confidence', 'last_confidence', 'last_entities', 'last_intent', 'person_name', 'phone_number', 'reference_number', 'requires', 'requires_followup', 'response', 'scheme_discovery', 'state', 'status_tracking', 'text', 'time_since_update', 'tracking_reference', 'turn_count', 'user_name']

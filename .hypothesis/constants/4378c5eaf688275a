@@ -1,0 +1,4 @@
+# file: E:\Downloads\Kiro\Projects\AI for Bharat Phase Idea\bharat_voice_assistant\voice\audio_processor.py
+# hypothesis_version: 6.151.0
+
+[-0.3, -0.2, -0.1, 0.0, 0.01, 0.02, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 0.8, 0.95, 1.0, 2.0, 32768.0, 100, 300, 3400, 4000, 16000, 32767, '-ac', '-ar', '1', 'acceptable', 'clipping_ratio', 'dynamic_range', 'error', 'good', 'high', 'low_freq_noise', 'metrics', 'mp3', 'noise_level', 'overall_score', 'poor', 'quality_level', 'raw', 'recommendations', 'source_format', 'speech_energy_ratio', 'target_format', 'volume_level']
