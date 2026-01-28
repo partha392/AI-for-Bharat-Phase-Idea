@@ -172,44 +172,77 @@ class BharatVoiceAssistantGUI:
             st.image("https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg", width=100)
             st.title("Navigation")
             
-            # Language selection
+            # Language selection with callback
             languages = [
                 'Hindi', 'English', 'Tamil', 'Telugu', 'Bengali', 
                 'Marathi', 'Gujarati', 'Kannada', 'Malayalam', 'Punjabi'
             ]
-            st.session_state.language = st.selectbox(
+            
+            # Language selection with immediate update
+            selected_language = st.selectbox(
                 "भाषा चुनें | Select Language",
                 languages,
-                index=languages.index(st.session_state.language)
+                index=languages.index(st.session_state.language),
+                key="language_selector"
             )
+            
+            # Update session state if language changed
+            if selected_language != st.session_state.language:
+                st.session_state.language = selected_language
+                st.success(f"Language changed to {selected_language} | भाषा बदली गई")
+                st.rerun()
             
             st.divider()
             
-            # Navigation menu
-            page = st.radio(
-                "सेवाएं | Services",
-                [
-                    "🏠 Home | होम",
-                    "🎯 Scheme Discovery | योजना खोज",
-                    "📝 File Grievance | शिकायत दर्ज करें",
-                    "📊 Track Status | स्थिति ट्रैक करें",
-                    "🔊 Voice Chat | आवाज़ी चैट",
-                    "📈 Analytics | विश्लेषण"
+            # Navigation menu with language-specific labels
+            if st.session_state.language == 'Hindi':
+                menu_options = [
+                    "🏠 होम",
+                    "🎯 योजना खोज", 
+                    "📝 शिकायत दर्ज करें",
+                    "📊 स्थिति ट्रैक करें",
+                    "🔊 आवाज़ी चैट",
+                    "📈 विश्लेषण"
                 ]
-            )
+            elif st.session_state.language == 'Tamil':
+                menu_options = [
+                    "🏠 முகப்பு",
+                    "🎯 திட்ட தேடல்",
+                    "📝 புகார் பதிவு",
+                    "📊 நிலை கண்காணிப்பு", 
+                    "🔊 குரல் அரட்டை",
+                    "📈 பகுப்பாய்வு"
+                ]
+            else:  # English and others
+                menu_options = [
+                    "🏠 Home",
+                    "🎯 Scheme Discovery",
+                    "📝 File Grievance", 
+                    "📊 Track Status",
+                    "🔊 Voice Chat",
+                    "📈 Analytics"
+                ]
+            
+            page = st.radio("सेवाएं | Services", menu_options)
             
             st.divider()
             
-            # User profile
-            with st.expander("👤 User Profile | उपयोगकर्ता प्रोफ़ाइल"):
-                st.session_state.user_profile['name'] = st.text_input("Name | नाम")
-                st.session_state.user_profile['age'] = st.number_input("Age | आयु", 18, 100, 30)
+            # User profile with language-specific labels
+            profile_title = "👤 उपयोगकर्ता प्रोफ़ाइल" if st.session_state.language == 'Hindi' else "👤 User Profile"
+            with st.expander(profile_title):
+                name_label = "नाम" if st.session_state.language == 'Hindi' else "Name"
+                age_label = "आयु" if st.session_state.language == 'Hindi' else "Age"
+                state_label = "राज्य" if st.session_state.language == 'Hindi' else "State"
+                income_label = "आय श्रेणी" if st.session_state.language == 'Hindi' else "Income Category"
+                
+                st.session_state.user_profile['name'] = st.text_input(name_label)
+                st.session_state.user_profile['age'] = st.number_input(age_label, 18, 100, 30)
                 st.session_state.user_profile['state'] = st.selectbox(
-                    "State | राज्य",
+                    state_label,
                     ['Delhi', 'Maharashtra', 'Karnataka', 'Tamil Nadu', 'Gujarat', 'Other']
                 )
                 st.session_state.user_profile['income'] = st.selectbox(
-                    "Income Category | आय श्रेणी",
+                    income_label,
                     ['Below Poverty Line', 'Low Income', 'Middle Income', 'High Income']
                 )
         
@@ -510,34 +543,147 @@ class BharatVoiceAssistantGUI:
         """Render voice chat interface"""
         st.subheader("🔊 Voice Chat | आवाज़ी चैट")
         
+        # Language-specific content
+        language_content = {
+            'Hindi': {
+                'voice_features': """
+                🎤 **आवाज़ी सुविधाएं:**
+                - अपनी पसंदीदा भाषा में बोलें
+                - सरकारी योजनाओं के बारे में पूछें
+                - आवाज़ के माध्यम से शिकायत दर्ज करें
+                - स्थिति अपडेट प्राप्त करें
+                """,
+                'start_button': "🎤 आवाज़ी चैट शुरू करें",
+                'activated': "आवाज़ी चैट सक्रिय!",
+                'speak_now': "कृपया अब बोलें...",
+                'conversation_history': "💬 बातचीत का इतिहास",
+                'sample_messages': [
+                    {"role": "user", "message": "मुझे कृषि योजनाओं के बारे में बताएं", "time": "10:30 AM"},
+                    {"role": "assistant", "message": "आपके लिए कुछ मुख्य कृषि योजनाएं हैं: PM-KISAN, फसल बीमा योजना, किसान सम्मान निधि...", "time": "10:31 AM"},
+                    {"role": "user", "message": "PM-KISAN के लिए कैसे आवेदन करें?", "time": "10:32 AM"},
+                    {"role": "assistant", "message": "PM-KISAN के लिए आवेदन करने के लिए आप pmkisan.gov.in पर जाकर ऑनलाइन आवेदन कर सकते हैं...", "time": "10:33 AM"}
+                ]
+            },
+            'English': {
+                'voice_features': """
+                🎤 **Voice Features:**
+                - Speak in your preferred language
+                - Ask about government schemes
+                - File grievances through voice
+                - Get status updates
+                """,
+                'start_button': "🎤 Start Voice Chat",
+                'activated': "Voice chat activated!",
+                'speak_now': "Please speak now...",
+                'conversation_history': "💬 Conversation History",
+                'sample_messages': [
+                    {"role": "user", "message": "Tell me about agriculture schemes", "time": "10:30 AM"},
+                    {"role": "assistant", "message": "Here are some key agriculture schemes: PM-KISAN, Crop Insurance Scheme, Farmer Honor Fund...", "time": "10:31 AM"},
+                    {"role": "user", "message": "How to apply for PM-KISAN?", "time": "10:32 AM"},
+                    {"role": "assistant", "message": "To apply for PM-KISAN, you can visit pmkisan.gov.in and submit your online application...", "time": "10:33 AM"}
+                ]
+            },
+            'Tamil': {
+                'voice_features': """
+                🎤 **குரல் அம்சங்கள்:**
+                - உங்கள் விருப்பமான மொழியில் பேசுங்கள்
+                - அரசாங்க திட்டங்களைப் பற்றி கேளுங்கள்
+                - குரல் மூலம் புகார்களை பதிவு செய்யுங்கள்
+                - நிலை புதுப்பிப்புகளைப் பெறுங்கள்
+                """,
+                'start_button': "🎤 குரல் அரட்டையைத் தொடங்கவும்",
+                'activated': "குரல் அரட்டை செயல்படுத்தப்பட்டது!",
+                'speak_now': "தயவுசெய்து இப்போது பேசுங்கள்...",
+                'conversation_history': "💬 உரையாடல் வரலாறு",
+                'sample_messages': [
+                    {"role": "user", "message": "விவசாய திட்டங்களைப் பற்றி சொல்லுங்கள்", "time": "10:30 AM"},
+                    {"role": "assistant", "message": "இங்கே சில முக்கிய விவசாய திட்டங்கள்: PM-KISAN, பயிர் காப்பீட்டு திட்டம்...", "time": "10:31 AM"},
+                    {"role": "user", "message": "PM-KISAN க்கு எப்படி விண்ணப்பிப்பது?", "time": "10:32 AM"},
+                    {"role": "assistant", "message": "PM-KISAN க்கு விண்ணப்பிக்க, pmkisan.gov.in இல் சென்று ஆன்லைன் விண்ணப்பம் செய்யலாம்...", "time": "10:33 AM"}
+                ]
+            }
+        }
+        
+        current_lang = st.session_state.language
+        content = language_content.get(current_lang, language_content['English'])
+        
         col1, col2 = st.columns([2, 1])
         
         with col1:
-            st.info("""
-            🎤 **Voice Features | आवाज़ी सुविधाएं:**
-            - Speak in your preferred language | अपनी पसंदीदा भाषा में बोलें
-            - Ask about government schemes | सरकारी योजनाओं के बारे में पूछें
-            - File grievances through voice | आवाज़ के माध्यम से शिकायत दर्ज करें
-            - Get status updates | स्थिति अपडेट प्राप्त करें
-            """)
+            st.info(content['voice_features'])
         
         with col2:
-            if st.button("🎤 Start Voice Chat | आवाज़ी चैट शुरू करें", use_container_width=True):
-                st.success("Voice chat activated! | आवाज़ी चैट सक्रिय!")
-                st.info("Please speak now... | कृपया अब बोलें...")
+            if st.button(content['start_button'], use_container_width=True):
+                st.success(content['activated'])
+                st.info(content['speak_now'])
+                
+                # Simulate voice processing
+                with st.spinner("Processing voice... | आवाज़ प्रोसेसिंग..."):
+                    import time
+                    time.sleep(2)
+                
+                # Add to conversation history
+                if 'voice_conversation' not in st.session_state:
+                    st.session_state.voice_conversation = []
+                
+                # Simulate voice input and response
+                user_input = "मुझे योजनाओं के बारे में बताएं" if current_lang == 'Hindi' else "Tell me about schemes"
+                assistant_response = self.conversation_manager.process_message(
+                    message=user_input,
+                    language=current_lang.lower(),
+                    session_id="voice_session"
+                )
+                
+                st.session_state.voice_conversation.append({
+                    "role": "user",
+                    "message": user_input,
+                    "time": "Now"
+                })
+                st.session_state.voice_conversation.append({
+                    "role": "assistant", 
+                    "message": assistant_response['message'],
+                    "time": "Now"
+                })
+                
+                st.rerun()
         
-        # Chat history
-        st.subheader("💬 Conversation History | बातचीत का इतिहास")
+        # Chat input
+        st.subheader("💬 Text Chat | टेक्स्ट चैट")
         
-        # Sample conversation
-        sample_conversation = [
-            {"role": "user", "message": "मुझे कृषि योजनाओं के बारे में बताएं", "time": "10:30 AM"},
-            {"role": "assistant", "message": "आपके लिए कुछ मुख्य कृषि योजनाएं हैं: PM-KISAN, Crop Insurance Scheme...", "time": "10:31 AM"},
-            {"role": "user", "message": "PM-KISAN के लिए कैसे आवेदन करें?", "time": "10:32 AM"},
-            {"role": "assistant", "message": "PM-KISAN के लिए आवेदन करने के लिए आप ऑनलाइन पोर्टल पर जा सकते हैं...", "time": "10:33 AM"}
-        ]
+        # Chat input
+        if prompt := st.chat_input("Type your message here... | यहाँ अपना संदेश टाइप करें..."):
+            # Add user message to conversation history
+            if 'voice_conversation' not in st.session_state:
+                st.session_state.voice_conversation = []
+            
+            st.session_state.voice_conversation.append({
+                "role": "user",
+                "message": prompt,
+                "time": "Now"
+            })
+            
+            # Get AI response
+            response = self.conversation_manager.process_message(
+                message=prompt,
+                language=current_lang.lower(),
+                session_id="text_session"
+            )
+            
+            st.session_state.voice_conversation.append({
+                "role": "assistant",
+                "message": response['message'],
+                "time": "Now"
+            })
+            
+            st.rerun()
         
-        for msg in sample_conversation:
+        # Display conversation history
+        st.subheader(content['conversation_history'])
+        
+        # Show conversation from session state or sample
+        conversation = st.session_state.get('voice_conversation', content['sample_messages'])
+        
+        for msg in conversation[-10:]:  # Show last 10 messages
             if msg["role"] == "user":
                 st.chat_message("user").write(f"{msg['message']} *({msg['time']})*")
             else:
@@ -604,18 +750,18 @@ class BharatVoiceAssistantGUI:
         # Get current page from sidebar
         current_page = self.render_sidebar()
         
-        # Render appropriate page
-        if "Home" in current_page:
+        # Render appropriate page based on selection
+        if "Home" in current_page or "होम" in current_page or "முகப்பு" in current_page:
             self.render_home_page()
-        elif "Scheme Discovery" in current_page:
+        elif "Scheme" in current_page or "योजना" in current_page or "திட்ட" in current_page:
             self.render_scheme_discovery()
-        elif "File Grievance" in current_page:
+        elif "Grievance" in current_page or "शिकायत" in current_page or "புகார்" in current_page:
             self.render_grievance_filing()
-        elif "Track Status" in current_page:
+        elif "Status" in current_page or "स्थिति" in current_page or "நிலை" in current_page:
             self.render_status_tracking()
-        elif "Voice Chat" in current_page:
+        elif "Voice" in current_page or "आवाज़ी" in current_page or "குரல்" in current_page:
             self.render_voice_chat()
-        elif "Analytics" in current_page:
+        elif "Analytics" in current_page or "विश्लेषण" in current_page or "பகுப்பாய்வு" in current_page:
             self.render_analytics()
         
         # Footer
