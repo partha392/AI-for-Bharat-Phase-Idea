@@ -543,6 +543,12 @@ class BharatVoiceAssistantGUI:
         """Render voice chat interface"""
         st.subheader("🔊 Voice Chat | आवाज़ी चैट")
         
+        # Initialize voice conversation in session state
+        if 'voice_conversation' not in st.session_state:
+            st.session_state.voice_conversation = []
+        if 'voice_active' not in st.session_state:
+            st.session_state.voice_active = False
+        
         # Language-specific content
         language_content = {
             'Hindi': {
@@ -554,14 +560,16 @@ class BharatVoiceAssistantGUI:
                 - स्थिति अपडेट प्राप्त करें
                 """,
                 'start_button': "🎤 आवाज़ी चैट शुरू करें",
-                'activated': "आवाज़ी चैट सक्रिय!",
-                'speak_now': "कृपया अब बोलें...",
+                'stop_button': "⏹️ आवाज़ी चैट बंद करें",
+                'activated': "✅ आवाज़ी चैट सक्रिय! नीचे टाइप करें या बोलें।",
+                'deactivated': "⏹️ आवाज़ी चैट बंद कर दी गई।",
+                'speak_now': "🎙️ अब बोलें या नीचे टाइप करें...",
                 'conversation_history': "💬 बातचीत का इतिहास",
                 'sample_messages': [
                     {"role": "user", "message": "मुझे कृषि योजनाओं के बारे में बताएं", "time": "10:30 AM"},
-                    {"role": "assistant", "message": "आपके लिए कुछ मुख्य कृषि योजनाएं हैं: PM-KISAN, फसल बीमा योजना, किसान सम्मान निधि...", "time": "10:31 AM"},
+                    {"role": "assistant", "message": "आपके लिए कुछ मुख्य कृषि योजनाएं हैं: PM-KISAN (₹6,000 प्रति वर्ष), फसल बीमा योजना, किसान सम्मान निधि। क्या आप किसी विशेष योजना के बारे में जानना चाहते हैं?", "time": "10:31 AM"},
                     {"role": "user", "message": "PM-KISAN के लिए कैसे आवेदन करें?", "time": "10:32 AM"},
-                    {"role": "assistant", "message": "PM-KISAN के लिए आवेदन करने के लिए आप pmkisan.gov.in पर जाकर ऑनलाइन आवेदन कर सकते हैं...", "time": "10:33 AM"}
+                    {"role": "assistant", "message": "PM-KISAN के लिए आवेदन करने के लिए: 1) pmkisan.gov.in पर जाएं, 2) 'नया किसान पंजीकरण' पर क्लिक करें, 3) आधार कार्ड और बैंक विवरण तैयार रखें, 4) फॉर्म भरें और सबमिट करें।", "time": "10:33 AM"}
                 ]
             },
             'English': {
@@ -573,14 +581,16 @@ class BharatVoiceAssistantGUI:
                 - Get status updates
                 """,
                 'start_button': "🎤 Start Voice Chat",
-                'activated': "Voice chat activated!",
-                'speak_now': "Please speak now...",
+                'stop_button': "⏹️ Stop Voice Chat",
+                'activated': "✅ Voice chat activated! Type below or speak.",
+                'deactivated': "⏹️ Voice chat stopped.",
+                'speak_now': "🎙️ Speak now or type below...",
                 'conversation_history': "💬 Conversation History",
                 'sample_messages': [
                     {"role": "user", "message": "Tell me about agriculture schemes", "time": "10:30 AM"},
-                    {"role": "assistant", "message": "Here are some key agriculture schemes: PM-KISAN, Crop Insurance Scheme, Farmer Honor Fund...", "time": "10:31 AM"},
+                    {"role": "assistant", "message": "Here are key agriculture schemes: PM-KISAN (₹6,000/year), Crop Insurance Scheme, Farmer Honor Fund. Which scheme would you like to know more about?", "time": "10:31 AM"},
                     {"role": "user", "message": "How to apply for PM-KISAN?", "time": "10:32 AM"},
-                    {"role": "assistant", "message": "To apply for PM-KISAN, you can visit pmkisan.gov.in and submit your online application...", "time": "10:33 AM"}
+                    {"role": "assistant", "message": "To apply for PM-KISAN: 1) Visit pmkisan.gov.in, 2) Click 'New Farmer Registration', 3) Keep Aadhaar and bank details ready, 4) Fill the form and submit.", "time": "10:33 AM"}
                 ]
             },
             'Tamil': {
@@ -592,14 +602,16 @@ class BharatVoiceAssistantGUI:
                 - நிலை புதுப்பிப்புகளைப் பெறுங்கள்
                 """,
                 'start_button': "🎤 குரல் அரட்டையைத் தொடங்கவும்",
-                'activated': "குரல் அரட்டை செயல்படுத்தப்பட்டது!",
-                'speak_now': "தயவுசெய்து இப்போது பேசுங்கள்...",
+                'stop_button': "⏹️ குரல் அரட்டையை நிறுத்தவும்",
+                'activated': "✅ குரல் அரட்டை செயல்படுத்தப்பட்டது! கீழே தட்டச்சு செய்யுங்கள் அல்லது பேசுங்கள்।",
+                'deactivated': "⏹️ குரல் அரட்டை நிறுத்தப்பட்டது।",
+                'speak_now': "🎙️ இப்போது பேசுங்கள் அல்லது கீழே தட்டச்சு செய்யுங்கள்...",
                 'conversation_history': "💬 உரையாடல் வரலாறு",
                 'sample_messages': [
                     {"role": "user", "message": "விவசாய திட்டங்களைப் பற்றி சொல்லுங்கள்", "time": "10:30 AM"},
-                    {"role": "assistant", "message": "இங்கே சில முக்கிய விவசாய திட்டங்கள்: PM-KISAN, பயிர் காப்பீட்டு திட்டம்...", "time": "10:31 AM"},
+                    {"role": "assistant", "message": "முக்கிய விவசாய திட்டங்கள்: PM-KISAN (₹6,000/ஆண்டு), பயிர் காப்பீட்டு திட்டம், விவசாயி கௌரவ நிதி। எந்த திட்டத்தைப் பற்றி மேலும் அறிய விரும்புகிறீர்கள்?", "time": "10:31 AM"},
                     {"role": "user", "message": "PM-KISAN க்கு எப்படி விண்ணப்பிப்பது?", "time": "10:32 AM"},
-                    {"role": "assistant", "message": "PM-KISAN க்கு விண்ணப்பிக்க, pmkisan.gov.in இல் சென்று ஆன்லைன் விண்ணப்பம் செய்யலாம்...", "time": "10:33 AM"}
+                    {"role": "assistant", "message": "PM-KISAN க்கு விண்ணப்பிக்க: 1) pmkisan.gov.in க்கு செல்லுங்கள், 2) 'புதிய விவசாயி பதிவு' கிளிக் செய்யுங்கள், 3) ஆதார் மற்றும் வங்கி விவரங்களை தயார் வைத்துக் கொள்ளுங்கள், 4) படிவத்தை நிரப்பி சமர்ப்பிக்கவும்।", "time": "10:33 AM"}
                 ]
             }
         }
@@ -613,49 +625,87 @@ class BharatVoiceAssistantGUI:
             st.info(content['voice_features'])
         
         with col2:
-            if st.button(content['start_button'], use_container_width=True):
-                st.success(content['activated'])
-                st.info(content['speak_now'])
-                
-                # Simulate voice processing
-                with st.spinner("Processing voice... | आवाज़ प्रोसेसिंग..."):
-                    import time
-                    time.sleep(2)
-                
-                # Add to conversation history
-                if 'voice_conversation' not in st.session_state:
-                    st.session_state.voice_conversation = []
-                
-                # Simulate voice input and response
-                user_input = "मुझे योजनाओं के बारे में बताएं" if current_lang == 'Hindi' else "Tell me about schemes"
-                assistant_response = self.conversation_manager.process_message(
-                    message=user_input,
-                    language=current_lang.lower(),
-                    session_id="voice_session"
-                )
-                
-                st.session_state.voice_conversation.append({
-                    "role": "user",
-                    "message": user_input,
-                    "time": "Now"
-                })
-                st.session_state.voice_conversation.append({
-                    "role": "assistant", 
-                    "message": assistant_response['message'],
-                    "time": "Now"
-                })
-                
-                st.rerun()
+            # Voice control buttons
+            if not st.session_state.voice_active:
+                if st.button(content['start_button'], use_container_width=True, type="primary"):
+                    st.session_state.voice_active = True
+                    st.success(content['activated'])
+                    
+                    # Add welcome message to conversation
+                    welcome_msg = {
+                        'Hindi': "नमस्ते! मैं भारत वॉयस असिस्टेंट हूं। मैं आपकी सरकारी योजनाओं और शिकायतों में मदद कर सकता हूं। आप क्या जानना चाहते हैं?",
+                        'English': "Hello! I'm Bharat Voice Assistant. I can help you with government schemes and grievances. What would you like to know?",
+                        'Tamil': "வணக்கம்! நான் பாரத் குரல் உதவியாளர். அரசாங்க திட்டங்கள் மற்றும் புகார்களில் உங்களுக்கு உதவ முடியும். நீங்கள் என்ன தெரிந்து கொள்ள விரும்புகிறீர்கள்?"
+                    }
+                    
+                    st.session_state.voice_conversation.append({
+                        "role": "assistant",
+                        "message": welcome_msg.get(current_lang, welcome_msg['English']),
+                        "time": "Now"
+                    })
+                    st.rerun()
+            else:
+                if st.button(content['stop_button'], use_container_width=True, type="secondary"):
+                    st.session_state.voice_active = False
+                    st.info(content['deactivated'])
+                    st.rerun()
         
-        # Chat input
-        st.subheader("💬 Text Chat | टेक्स्ट चैट")
-        
-        # Chat input
-        if prompt := st.chat_input("Type your message here... | यहाँ अपना संदेश टाइप करें..."):
-            # Add user message to conversation history
-            if 'voice_conversation' not in st.session_state:
-                st.session_state.voice_conversation = []
+        # Show voice status
+        if st.session_state.voice_active:
+            st.success("🎙️ Voice Assistant Active | आवाज़ी सहायक सक्रिय | குரல் உதவியாளர் செயலில்")
             
+            # Simulate voice input button
+            col1, col2, col3 = st.columns([1, 2, 1])
+            with col2:
+                if st.button("🎙️ Press to Speak | बोलने के लिए दबाएं | பேச அழுத்தவும்", use_container_width=True):
+                    with st.spinner("🎧 Listening... | सुन रहा हूं... | கேட்டுக்கொண்டிருக்கிறேன்..."):
+                        import time
+                        time.sleep(2)
+                    
+                    # Simulate voice recognition
+                    voice_inputs = {
+                        'Hindi': "मुझे स्वास्थ्य योजनाओं के बारे में बताएं",
+                        'English': "Tell me about health schemes",
+                        'Tamil': "சுகாதார திட்டங்களைப் பற்றி சொல்லுங்கள்"
+                    }
+                    
+                    user_input = voice_inputs.get(current_lang, voice_inputs['English'])
+                    
+                    # Add user message
+                    st.session_state.voice_conversation.append({
+                        "role": "user",
+                        "message": f"🎤 {user_input}",
+                        "time": "Now"
+                    })
+                    
+                    # Generate AI response
+                    response = self.conversation_manager.process_message(
+                        message=user_input,
+                        language=current_lang.lower(),
+                        session_id="voice_session"
+                    )
+                    
+                    # Add AI response
+                    st.session_state.voice_conversation.append({
+                        "role": "assistant",
+                        "message": response['message'],
+                        "time": "Now"
+                    })
+                    
+                    st.rerun()
+        
+        # Chat input (always available)
+        st.subheader("💬 Text Chat | टेक्स्ट चैट | உரை அரட்டை")
+        
+        # Chat input
+        chat_placeholder = {
+            'Hindi': "यहाँ अपना संदेश टाइप करें...",
+            'English': "Type your message here...",
+            'Tamil': "உங்கள் செய்தியை இங்கே தட்டச்சு செய்யுங்கள்..."
+        }
+        
+        if prompt := st.chat_input(chat_placeholder.get(current_lang, chat_placeholder['English'])):
+            # Add user message to conversation history
             st.session_state.voice_conversation.append({
                 "role": "user",
                 "message": prompt,
@@ -681,13 +731,25 @@ class BharatVoiceAssistantGUI:
         st.subheader(content['conversation_history'])
         
         # Show conversation from session state or sample
-        conversation = st.session_state.get('voice_conversation', content['sample_messages'])
+        conversation = st.session_state.voice_conversation if st.session_state.voice_conversation else content['sample_messages']
         
+        # Display conversation in chat format
         for msg in conversation[-10:]:  # Show last 10 messages
             if msg["role"] == "user":
-                st.chat_message("user").write(f"{msg['message']} *({msg['time']})*")
+                with st.chat_message("user"):
+                    st.write(f"{msg['message']}")
+                    st.caption(f"⏰ {msg['time']}")
             else:
-                st.chat_message("assistant").write(f"{msg['message']} *({msg['time']})*")
+                with st.chat_message("assistant"):
+                    st.write(f"{msg['message']}")
+                    st.caption(f"⏰ {msg['time']}")
+        
+        # Clear conversation button
+        if st.session_state.voice_conversation:
+            if st.button("🗑️ Clear Conversation | बातचीत साफ़ करें | உரையாடலை அழிக்கவும்"):
+                st.session_state.voice_conversation = []
+                st.success("Conversation cleared! | बातचीत साफ़ कर दी गई! | உரையாடல் அழிக்கப்பட்டது!")
+                st.rerun()
     
     def render_analytics(self):
         """Render analytics dashboard"""
