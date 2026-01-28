@@ -15,19 +15,19 @@ from typing import Dict, List, Optional
 import base64
 import io
 
-# Import core components
-try:
-    from ..core.orchestrator import SystemOrchestrator
-    from ..language.conversation_manager import ConversationManager
-    from ..schemes.scheme_manager import SchemeManager
-    from ..grievance.filing_assistant import GrievanceFilingAssistant
-    from ..voice.gateway import VoiceGateway
-    from ..privacy.privacy_manager import PrivacyManager
-except ImportError:
-    # Fallback for direct execution
-    import sys
-    import os
-    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Import core components (commented out for standalone demo)
+# try:
+#     from ..core.orchestrator import SystemOrchestrator
+#     from ..language.conversation_manager import ConversationManager
+#     from ..schemes.scheme_manager import SchemeManager
+#     from ..grievance.filing_assistant import GrievanceFilingAssistant
+#     from ..voice.gateway import VoiceGateway
+#     from ..privacy.privacy_manager import PrivacyManager
+# except ImportError:
+#     # Fallback for direct execution
+#     import sys
+#     import os
+#     sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 logger = logging.getLogger(__name__)
 
@@ -86,23 +86,58 @@ class BharatVoiceAssistantGUI:
     
     def initialize_components(self):
         """Initialize core system components"""
-        try:
-            self.orchestrator = SystemOrchestrator()
-            self.conversation_manager = ConversationManager()
-            self.scheme_manager = SchemeManager()
-            self.grievance_assistant = GrievanceFilingAssistant()
-            self.voice_gateway = VoiceGateway()
-            self.privacy_manager = PrivacyManager()
-        except Exception as e:
-            st.error(f"Error initializing components: {e}")
-            # Create mock components for demo
-            self.create_mock_components()
+        # Use mock components for demo - this allows the GUI to work standalone
+        self.create_mock_components()
     
     def create_mock_components(self):
         """Create mock components for demonstration"""
         class MockComponent:
             def __init__(self):
                 pass
+            
+            def process_voice_input(self, **kwargs):
+                return {
+                    'text': 'मुझे कृषि योजनाओं के बारे में बताएं',
+                    'audio_url': '/mock/audio.mp3',
+                    'intent': 'scheme_inquiry',
+                    'entities': {'category': 'agriculture'}
+                }
+            
+            def process_message(self, **kwargs):
+                return {
+                    'message': 'आपके लिए कुछ मुख्य कृषि योजनाएं हैं: PM-KISAN, Crop Insurance...',
+                    'intent': 'scheme_response',
+                    'entities': {'schemes': ['PM-KISAN', 'Crop Insurance']},
+                    'suggestions': ['Apply for PM-KISAN', 'Check eligibility']
+                }
+            
+            def find_matching_schemes(self, **kwargs):
+                return [
+                    {
+                        'name': 'PM-KISAN',
+                        'category': 'Agriculture',
+                        'description': 'Financial support to farmers',
+                        'eligibility': 'Small and marginal farmers',
+                        'benefit': '₹6,000 per year',
+                        'match_score': 95
+                    }
+                ]
+            
+            def submit_grievance(self, **kwargs):
+                import random
+                return {
+                    'reference_number': f'GRV{random.randint(100000, 999999)}',
+                    'status': 'Submitted'
+                }
+            
+            def get_status(self, reference_number):
+                return {
+                    'reference': reference_number,
+                    'status': 'Under Review',
+                    'department': 'Revenue Department',
+                    'submitted_date': '2024-01-15',
+                    'last_updated': '2024-01-20'
+                }
         
         self.orchestrator = MockComponent()
         self.conversation_manager = MockComponent()
