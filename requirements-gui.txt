@@ -1,0 +1,15 @@
+# GUI Requirements for Bharat Voice Assistant
+streamlit>=1.28.0
+plotly>=5.17.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Additional UI components
+streamlit-option-menu>=0.3.6
+streamlit-chat>=0.1.1
+streamlit-audio-recorder>=0.0.8
+streamlit-webrtc>=0.47.1
+
+# For voice processing in GUI
+pyaudio>=0.2.11
+wave>=0.0.2
