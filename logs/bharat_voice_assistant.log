@@ -11387,3 +11387,1029 @@ cryptography.exceptions.InvalidTag
 2026-01-30 00:59:50,159 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
 2026-01-30 00:59:50,159 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
 2026-01-30 00:59:50,160 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-30 01:30:15,168 - bharat_voice_assistant.core.logging - INFO - Logging initialized with level INFO and format simple
+2026-01-30 01:30:15,347 - bharat_voice_assistant.core.monitoring - INFO - CloudWatch publisher disabled (development mode or boto3 not available)
+2026-01-30 01:30:15,347 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: memory_usage
+2026-01-30 01:30:15,347 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: disk_space
+2026-01-30 01:30:15,347 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: aws_connectivity
+2026-01-30 01:30:15,349 - bharat_voice_assistant.core.aws_client - INFO - Initializing AWS clients...
+2026-01-30 01:30:15,435 - bharat_voice_assistant.core.aws_client - INFO - Created AWS sts client
+2026-01-30 01:30:15,440 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:15,473 - bharat_voice_assistant.core.aws_client - INFO - Created AWS s3 client
+2026-01-30 01:30:15,474 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:15,480 - bharat_voice_assistant.core.aws_client - INFO - Created AWS transcribe client
+2026-01-30 01:30:15,481 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:15,498 - bharat_voice_assistant.core.aws_client - INFO - Created AWS polly client
+2026-01-30 01:30:15,499 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:15,528 - bharat_voice_assistant.core.aws_client - INFO - Created AWS comprehend client
+2026-01-30 01:30:15,528 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:15,529 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-30 01:30:15,529 - bharat_voice_assistant.core.aws_client - WARNING - AWS configuration warning: AWS credentials not configured (using IAM role or environment)
+2026-01-30 01:30:15,556 - bharat_voice_assistant.core.cache_manager - INFO - CacheManager initialized with hybrid storage
+2026-01-30 01:30:15,559 - bharat_voice_assistant.core.request_queue - INFO - RequestQueue initialized
+2026-01-30 01:30:15,685 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: scheme_discovery
+2026-01-30 01:30:15,686 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: basic_conversation
+2026-01-30 01:30:15,686 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: status_inquiry
+2026-01-30 01:30:15,686 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: grievance_filing
+2026-01-30 01:30:15,686 - bharat_voice_assistant.core.offline_manager - INFO - OfflineManager initialized
+2026-01-30 01:30:15,690 - bharat_voice_assistant.core.offline_integration - INFO - OfflineIntegration initialized
+2026-01-30 01:30:15,793 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-30 01:30:15,893 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-30 01:30:15,894 - bharat_voice_assistant.core.data_validation - INFO - Data validation service initialized
+2026-01-30 01:30:15,894 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-30 01:30:15,894 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Trusted CA certificates loaded
+2026-01-30 01:30:15,894 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Secure authentication manager initialized
+2026-01-30 01:30:15,895 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-30 01:30:15,895 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-30 01:30:15,895 - bharat_voice_assistant.core.security_integration - INFO - Integrated security service initialized
+2026-01-30 01:30:18,678 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-30 01:30:18,678 - bharat_voice_assistant.voice.connection_manager - INFO - ConnectionManager initialized
+2026-01-30 01:30:18,679 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-30 01:30:18,679 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-30 01:30:18,679 - bharat_voice_assistant.voice.gateway - INFO - VoiceInterfaceGateway initialized on 0.0.0.0:8001
+2026-01-30 01:30:18,679 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-30 01:30:18,679 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-30 01:30:18,679 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-30 01:30:18,680 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-30 01:30:18,680 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:18,680 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:18,680 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:18,681 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:18,681 - bharat_voice_assistant.language.language_processor - INFO - LanguageProcessor initialized with multilingual support and conversation management
+2026-01-30 01:30:18,681 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:18,681 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:18,681 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:18,681 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:18,681 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:18,682 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-30 01:30:18,682 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-30 01:30:18,682 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-30 01:30:18,682 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:18,682 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:18,682 - bharat_voice_assistant.schemes.scheme_discovery - INFO - Initialized SchemeDiscoveryService
+2026-01-30 01:30:18,682 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-30 01:30:18,682 - bharat_voice_assistant.schemes.eligibility_assessor - INFO - Initialized EligibilityAssessor
+2026-01-30 01:30:18,682 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:18,683 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-30 01:30:18,683 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:18,683 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-30 01:30:18,683 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:18,683 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:18,683 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:18,683 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:18,683 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:18,684 - bharat_voice_assistant.grievance.filing_assistant - INFO - ConversationalFilingAssistant initialized
+2026-01-30 01:30:18,684 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-30 01:30:18,684 - bharat_voice_assistant.integration.government_api_client - INFO - GovernmentAPIClient initialized
+2026-01-30 01:30:18,685 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-30 01:30:18,685 - bharat_voice_assistant.integration.data_transformer - INFO - DataTransformer initialized
+2026-01-30 01:30:18,685 - bharat_voice_assistant.integration.integration_service - INFO - GovernmentIntegrationService initialized
+2026-01-30 01:30:18,685 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-30 01:30:18,686 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-30 01:30:18,687 - bharat_voice_assistant.accessibility.command_patterns - INFO - Command index built successfully
+2026-01-30 01:30:18,687 - bharat_voice_assistant.core.orchestrator - INFO - All components initialized successfully
+2026-01-30 01:30:18,687 - bharat_voice_assistant.core.orchestrator - INFO - Bharat Voice Orchestrator initialized successfully
+2026-01-30 01:30:18,711 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:18,711 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,712 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,712 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,712 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,712 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,712 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,713 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,713 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,713 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,713 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,713 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,713 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,713 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,713 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,714 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,714 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,714 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,714 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,714 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,714 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,714 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,715 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,715 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,715 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,715 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,715 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,715 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,715 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,716 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,716 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,716 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,716 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,716 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,716 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,716 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,717 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,717 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,717 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,717 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: hindi
+2026-01-30 01:30:18,717 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,718 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,719 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,719 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,719 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,719 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,719 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,719 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,720 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,720 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,720 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,720 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,720 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,721 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,721 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,721 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,721 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,721 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,722 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,722 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,722 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,722 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,722 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,722 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,722 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,723 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,723 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,723 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,723 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,724 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,724 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,724 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,724 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,724 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,725 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,725 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,725 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,725 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,726 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,726 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: english
+2026-01-30 01:30:18,726 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,726 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,726 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,726 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,727 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,727 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,727 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,727 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,727 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,728 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,728 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,728 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,728 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,729 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,729 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,729 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,729 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,730 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,730 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,730 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,730 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,730 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,731 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,731 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,731 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,731 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,731 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,731 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,732 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,732 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,732 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,732 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,732 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,732 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,732 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,732 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,733 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,733 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,733 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,733 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: tamil
+2026-01-30 01:30:18,733 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,734 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,734 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,734 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,734 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,735 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,735 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,735 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,735 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,735 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,735 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,735 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,736 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,736 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,736 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,736 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,736 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,736 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,737 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,737 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,737 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,737 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,737 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,737 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,737 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,737 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,738 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,738 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,738 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,738 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,738 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,738 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,738 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,739 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,739 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,739 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,739 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,739 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,739 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,739 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: bengali
+2026-01-30 01:30:18,739 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,740 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,740 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,740 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,740 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,740 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,741 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,741 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,741 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,741 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,742 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,742 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,742 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,742 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,742 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,742 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,743 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,743 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,743 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,743 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,743 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,743 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,743 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,744 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,744 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,744 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,744 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,744 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,744 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,744 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,745 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,745 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,745 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,745 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,745 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,746 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,746 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,746 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,746 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,747 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: marathi
+2026-01-30 01:30:18,747 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.40, language: hi)
+2026-01-30 01:30:18,748 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,748 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,748 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,748 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,748 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,748 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,748 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,748 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,749 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,749 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,749 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,749 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,749 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,749 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,749 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,750 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,750 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,750 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,750 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,750 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,750 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,750 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,750 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,751 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,751 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,751 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,751 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,752 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,752 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,752 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,752 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,753 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,753 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,753 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,753 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,753 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,754 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,754 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,754 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: gujarati
+2026-01-30 01:30:18,754 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,754 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,754 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,754 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,755 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,755 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,755 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,755 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,755 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,755 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,755 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,756 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,756 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,756 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,756 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,756 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,756 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,757 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,757 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,757 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,757 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,757 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,757 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,757 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,758 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,758 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,758 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,758 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,759 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,759 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,759 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,759 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,759 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,759 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,759 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,760 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,760 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,760 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,760 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,760 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: kannada
+2026-01-30 01:30:18,760 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,760 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,761 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,761 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,761 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,761 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,762 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,762 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,762 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,762 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,762 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,762 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,763 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,763 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,763 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,763 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,763 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,763 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,763 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,763 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,764 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,764 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,764 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,765 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,765 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,765 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,765 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,765 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,765 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,765 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,766 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,766 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,766 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,766 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,766 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,766 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,767 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,767 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,767 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,767 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: malayalam
+2026-01-30 01:30:18,767 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,767 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,768 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,768 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,768 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,768 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,768 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,768 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,768 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,768 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,769 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,769 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,769 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,769 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,769 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,769 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,769 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,769 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,769 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,769 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,770 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,770 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,770 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,770 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,770 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,771 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,771 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,771 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,772 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,772 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,772 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,772 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,772 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,772 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,772 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,772 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,773 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,773 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,773 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,773 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: punjabi
+2026-01-30 01:30:18,773 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,773 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,774 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,774 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,774 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,774 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,774 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,774 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,775 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,775 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,775 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,775 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,775 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,776 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,776 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,776 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,776 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,776 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,777 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,777 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,777 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,777 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,778 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,778 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,778 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,778 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,778 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,779 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,779 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,779 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,779 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,779 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,779 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,780 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,780 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,780 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,780 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,780 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,780 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,781 - bharat_voice_assistant.language.intent_classifier - WARNING - Unsupported language detected: telugu
+2026-01-30 01:30:18,781 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,782 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-30 01:30:18,903 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:18,903 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,905 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,906 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,908 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,909 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,912 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,912 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,912 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,913 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,913 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,914 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,914 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,914 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,914 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,915 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,916 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,916 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,916 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,916 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,916 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,917 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,918 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,918 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,918 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,918 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,919 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,919 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,920 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,920 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,920 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,923 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,923 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,923 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,924 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,924 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,924 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,924 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,925 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,925 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,925 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,926 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,926 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,926 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,927 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,926 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,926 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,927 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,927 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,928 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,928 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,928 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,928 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,928 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,928 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,928 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,929 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,929 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,929 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,930 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,930 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,930 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,930 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,931 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,931 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,931 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,931 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,931 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,931 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,931 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,932 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,932 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,932 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,933 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,933 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,933 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,933 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,934 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,933 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,934 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,933 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,938 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,938 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,938 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,939 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,939 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,939 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,939 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,940 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,940 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,940 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,941 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,941 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,940 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,942 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,942 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,941 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,942 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,941 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,942 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,943 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,943 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,943 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,943 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,943 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,943 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,944 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,944 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,944 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,944 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,945 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,945 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,945 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,945 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,948 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,946 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,946 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,946 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,947 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,947 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,948 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,946 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,948 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,948 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,948 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,949 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,949 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,949 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,949 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,949 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,949 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,949 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,949 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,950 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,950 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,950 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,950 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,951 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,951 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,951 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,951 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,952 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,952 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,952 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,953 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,952 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,952 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,952 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,953 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,953 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,953 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,952 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,953 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,953 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,954 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,954 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,955 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,955 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,955 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,955 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,955 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,955 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,956 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,956 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,956 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,956 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,956 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,956 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,957 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,957 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,957 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,957 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,956 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,957 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,958 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,958 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,958 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,957 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,958 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,958 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,957 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: scheme_discovery (confidence: 0.95, language: hi)
+2026-01-30 01:30:18,963 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:18,963 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,963 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,963 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,963 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,964 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,964 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:18,965 - bharat_voice_assistant.language.intent_classifier - INFO - Intent classified: unknown (confidence: 0.20, language: hi)
+2026-01-30 01:30:28,470 - bharat_voice_assistant.core.logging - INFO - Logging initialized with level INFO and format simple
+2026-01-30 01:30:28,633 - bharat_voice_assistant.core.monitoring - INFO - CloudWatch publisher disabled (development mode or boto3 not available)
+2026-01-30 01:30:28,633 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: memory_usage
+2026-01-30 01:30:28,633 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: disk_space
+2026-01-30 01:30:28,633 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: aws_connectivity
+2026-01-30 01:30:28,635 - bharat_voice_assistant.core.aws_client - INFO - Initializing AWS clients...
+2026-01-30 01:30:28,729 - bharat_voice_assistant.core.aws_client - INFO - Created AWS sts client
+2026-01-30 01:30:28,733 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:28,772 - bharat_voice_assistant.core.aws_client - INFO - Created AWS s3 client
+2026-01-30 01:30:28,773 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:28,779 - bharat_voice_assistant.core.aws_client - INFO - Created AWS transcribe client
+2026-01-30 01:30:28,780 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:28,806 - bharat_voice_assistant.core.aws_client - INFO - Created AWS polly client
+2026-01-30 01:30:28,808 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:28,841 - bharat_voice_assistant.core.aws_client - INFO - Created AWS comprehend client
+2026-01-30 01:30:28,842 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:28,842 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-30 01:30:28,842 - bharat_voice_assistant.core.aws_client - WARNING - AWS configuration warning: AWS credentials not configured (using IAM role or environment)
+2026-01-30 01:30:28,858 - bharat_voice_assistant.core.cache_manager - INFO - CacheManager initialized with hybrid storage
+2026-01-30 01:30:28,860 - bharat_voice_assistant.core.request_queue - INFO - RequestQueue initialized
+2026-01-30 01:30:28,929 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: scheme_discovery
+2026-01-30 01:30:28,930 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: basic_conversation
+2026-01-30 01:30:28,930 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: status_inquiry
+2026-01-30 01:30:28,930 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: grievance_filing
+2026-01-30 01:30:28,930 - bharat_voice_assistant.core.offline_manager - INFO - OfflineManager initialized
+2026-01-30 01:30:28,933 - bharat_voice_assistant.core.offline_integration - INFO - OfflineIntegration initialized
+2026-01-30 01:30:28,964 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-30 01:30:29,042 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-30 01:30:29,042 - bharat_voice_assistant.core.data_validation - INFO - Data validation service initialized
+2026-01-30 01:30:29,043 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-30 01:30:29,043 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Trusted CA certificates loaded
+2026-01-30 01:30:29,043 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Secure authentication manager initialized
+2026-01-30 01:30:29,043 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-30 01:30:29,043 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-30 01:30:29,043 - bharat_voice_assistant.core.security_integration - INFO - Integrated security service initialized
+2026-01-30 01:30:30,198 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-30 01:30:30,198 - bharat_voice_assistant.voice.connection_manager - INFO - ConnectionManager initialized
+2026-01-30 01:30:30,198 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-30 01:30:30,199 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-30 01:30:30,199 - bharat_voice_assistant.voice.gateway - INFO - VoiceInterfaceGateway initialized on 0.0.0.0:8001
+2026-01-30 01:30:30,199 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-30 01:30:30,199 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-30 01:30:30,200 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-30 01:30:30,200 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-30 01:30:30,200 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:30,201 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:30,201 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:30,201 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:30,201 - bharat_voice_assistant.language.language_processor - INFO - LanguageProcessor initialized with multilingual support and conversation management
+2026-01-30 01:30:30,201 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:30,201 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:30,202 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:30,202 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:30,202 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:30,202 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-30 01:30:30,202 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-30 01:30:30,202 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-30 01:30:30,203 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:30,203 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:30,203 - bharat_voice_assistant.schemes.scheme_discovery - INFO - Initialized SchemeDiscoveryService
+2026-01-30 01:30:30,203 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-30 01:30:30,203 - bharat_voice_assistant.schemes.eligibility_assessor - INFO - Initialized EligibilityAssessor
+2026-01-30 01:30:30,204 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:30,204 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-30 01:30:30,204 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:30,204 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-30 01:30:30,204 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:30,204 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:30,205 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:30,205 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:30,205 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:30,205 - bharat_voice_assistant.grievance.filing_assistant - INFO - ConversationalFilingAssistant initialized
+2026-01-30 01:30:30,205 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-30 01:30:30,205 - bharat_voice_assistant.integration.government_api_client - INFO - GovernmentAPIClient initialized
+2026-01-30 01:30:30,206 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-30 01:30:30,206 - bharat_voice_assistant.integration.data_transformer - INFO - DataTransformer initialized
+2026-01-30 01:30:30,206 - bharat_voice_assistant.integration.integration_service - INFO - GovernmentIntegrationService initialized
+2026-01-30 01:30:30,206 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-30 01:30:30,206 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-30 01:30:30,206 - bharat_voice_assistant.accessibility.command_patterns - INFO - Command index built successfully
+2026-01-30 01:30:30,207 - bharat_voice_assistant.core.orchestrator - INFO - All components initialized successfully
+2026-01-30 01:30:30,207 - bharat_voice_assistant.core.orchestrator - INFO - Bharat Voice Orchestrator initialized successfully
+2026-01-30 01:30:39,285 - bharat_voice_assistant.core.logging - INFO - Logging initialized with level INFO and format simple
+2026-01-30 01:30:39,435 - bharat_voice_assistant.core.monitoring - INFO - CloudWatch publisher disabled (development mode or boto3 not available)
+2026-01-30 01:30:39,435 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: memory_usage
+2026-01-30 01:30:39,435 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: disk_space
+2026-01-30 01:30:39,436 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: aws_connectivity
+2026-01-30 01:30:39,437 - bharat_voice_assistant.core.aws_client - INFO - Initializing AWS clients...
+2026-01-30 01:30:39,525 - bharat_voice_assistant.core.aws_client - INFO - Created AWS sts client
+2026-01-30 01:30:39,530 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:39,562 - bharat_voice_assistant.core.aws_client - INFO - Created AWS s3 client
+2026-01-30 01:30:39,563 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:39,581 - bharat_voice_assistant.core.aws_client - INFO - Created AWS transcribe client
+2026-01-30 01:30:39,582 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:39,616 - bharat_voice_assistant.core.aws_client - INFO - Created AWS polly client
+2026-01-30 01:30:39,617 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:39,624 - bharat_voice_assistant.core.aws_client - INFO - Created AWS comprehend client
+2026-01-30 01:30:39,625 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:39,625 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-30 01:30:39,625 - bharat_voice_assistant.core.aws_client - WARNING - AWS configuration warning: AWS credentials not configured (using IAM role or environment)
+2026-01-30 01:30:39,640 - bharat_voice_assistant.core.cache_manager - INFO - CacheManager initialized with hybrid storage
+2026-01-30 01:30:39,643 - bharat_voice_assistant.core.request_queue - INFO - RequestQueue initialized
+2026-01-30 01:30:39,706 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: scheme_discovery
+2026-01-30 01:30:39,706 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: basic_conversation
+2026-01-30 01:30:39,706 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: status_inquiry
+2026-01-30 01:30:39,706 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: grievance_filing
+2026-01-30 01:30:39,707 - bharat_voice_assistant.core.offline_manager - INFO - OfflineManager initialized
+2026-01-30 01:30:39,709 - bharat_voice_assistant.core.offline_integration - INFO - OfflineIntegration initialized
+2026-01-30 01:30:39,741 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-30 01:30:39,822 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-30 01:30:39,822 - bharat_voice_assistant.core.data_validation - INFO - Data validation service initialized
+2026-01-30 01:30:39,822 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-30 01:30:39,822 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Trusted CA certificates loaded
+2026-01-30 01:30:39,822 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Secure authentication manager initialized
+2026-01-30 01:30:39,823 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-30 01:30:39,823 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-30 01:30:39,823 - bharat_voice_assistant.core.security_integration - INFO - Integrated security service initialized
+2026-01-30 01:30:40,961 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-30 01:30:40,961 - bharat_voice_assistant.voice.connection_manager - INFO - ConnectionManager initialized
+2026-01-30 01:30:40,961 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-30 01:30:40,961 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-30 01:30:40,961 - bharat_voice_assistant.voice.gateway - INFO - VoiceInterfaceGateway initialized on 0.0.0.0:8001
+2026-01-30 01:30:40,962 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-30 01:30:40,962 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-30 01:30:40,962 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-30 01:30:40,962 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-30 01:30:40,962 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:40,963 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:40,963 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:40,963 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:40,963 - bharat_voice_assistant.language.language_processor - INFO - LanguageProcessor initialized with multilingual support and conversation management
+2026-01-30 01:30:40,963 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:40,963 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:40,964 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:40,964 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:40,964 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:40,964 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-30 01:30:40,964 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-30 01:30:40,964 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-30 01:30:40,964 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:40,964 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:40,964 - bharat_voice_assistant.schemes.scheme_discovery - INFO - Initialized SchemeDiscoveryService
+2026-01-30 01:30:40,965 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-30 01:30:40,965 - bharat_voice_assistant.schemes.eligibility_assessor - INFO - Initialized EligibilityAssessor
+2026-01-30 01:30:40,965 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:40,965 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-30 01:30:40,965 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:40,965 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-30 01:30:40,966 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:40,966 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:40,966 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:40,966 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:40,966 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:40,966 - bharat_voice_assistant.grievance.filing_assistant - INFO - ConversationalFilingAssistant initialized
+2026-01-30 01:30:40,967 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-30 01:30:40,967 - bharat_voice_assistant.integration.government_api_client - INFO - GovernmentAPIClient initialized
+2026-01-30 01:30:40,967 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-30 01:30:40,967 - bharat_voice_assistant.integration.data_transformer - INFO - DataTransformer initialized
+2026-01-30 01:30:40,967 - bharat_voice_assistant.integration.integration_service - INFO - GovernmentIntegrationService initialized
+2026-01-30 01:30:40,967 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-30 01:30:40,967 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-30 01:30:40,968 - bharat_voice_assistant.accessibility.command_patterns - INFO - Command index built successfully
+2026-01-30 01:30:40,968 - bharat_voice_assistant.core.orchestrator - INFO - All components initialized successfully
+2026-01-30 01:30:40,968 - bharat_voice_assistant.core.orchestrator - INFO - Bharat Voice Orchestrator initialized successfully
+2026-01-30 01:30:40,994 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:40,995 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-30 01:30:40,995 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:40,995 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:40,995 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:40,995 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:40,996 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:40,996 - bharat_voice_assistant.grievance.filing_assistant - INFO - ConversationalFilingAssistant initialized
+2026-01-30 01:30:50,563 - bharat_voice_assistant.core.logging - INFO - Logging initialized with level INFO and format simple
+2026-01-30 01:30:50,649 - bharat_voice_assistant.core.monitoring - INFO - CloudWatch publisher disabled (development mode or boto3 not available)
+2026-01-30 01:30:50,649 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: memory_usage
+2026-01-30 01:30:50,649 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: disk_space
+2026-01-30 01:30:50,649 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: aws_connectivity
+2026-01-30 01:30:50,650 - bharat_voice_assistant.core.aws_client - INFO - Initializing AWS clients...
+2026-01-30 01:30:50,720 - bharat_voice_assistant.core.aws_client - INFO - Created AWS sts client
+2026-01-30 01:30:50,721 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:50,744 - bharat_voice_assistant.core.aws_client - INFO - Created AWS s3 client
+2026-01-30 01:30:50,745 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:50,776 - bharat_voice_assistant.core.aws_client - INFO - Created AWS transcribe client
+2026-01-30 01:30:50,776 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:50,793 - bharat_voice_assistant.core.aws_client - INFO - Created AWS polly client
+2026-01-30 01:30:50,793 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:50,810 - bharat_voice_assistant.core.aws_client - INFO - Created AWS comprehend client
+2026-01-30 01:30:50,811 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-30 01:30:50,811 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-30 01:30:50,811 - bharat_voice_assistant.core.aws_client - WARNING - AWS configuration warning: AWS credentials not configured (using IAM role or environment)
+2026-01-30 01:30:50,815 - bharat_voice_assistant.core.cache_manager - INFO - CacheManager initialized with hybrid storage
+2026-01-30 01:30:50,817 - bharat_voice_assistant.core.request_queue - INFO - RequestQueue initialized
+2026-01-30 01:30:50,880 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: scheme_discovery
+2026-01-30 01:30:50,880 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: basic_conversation
+2026-01-30 01:30:50,880 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: status_inquiry
+2026-01-30 01:30:50,880 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: grievance_filing
+2026-01-30 01:30:50,880 - bharat_voice_assistant.core.offline_manager - INFO - OfflineManager initialized
+2026-01-30 01:30:50,881 - bharat_voice_assistant.core.offline_integration - INFO - OfflineIntegration initialized
+2026-01-30 01:30:50,912 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-30 01:30:50,997 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-30 01:30:50,997 - bharat_voice_assistant.core.data_validation - INFO - Data validation service initialized
+2026-01-30 01:30:50,997 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-30 01:30:50,997 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Trusted CA certificates loaded
+2026-01-30 01:30:50,997 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Secure authentication manager initialized
+2026-01-30 01:30:50,997 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-30 01:30:50,997 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-30 01:30:50,997 - bharat_voice_assistant.core.security_integration - INFO - Integrated security service initialized
+2026-01-30 01:30:52,180 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-30 01:30:52,180 - bharat_voice_assistant.voice.connection_manager - INFO - ConnectionManager initialized
+2026-01-30 01:30:52,181 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-30 01:30:52,181 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-30 01:30:52,181 - bharat_voice_assistant.voice.gateway - INFO - VoiceInterfaceGateway initialized on 0.0.0.0:8001
+2026-01-30 01:30:52,181 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-30 01:30:52,181 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-30 01:30:52,181 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-30 01:30:52,181 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-30 01:30:52,181 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:52,181 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:52,181 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,181 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,181 - bharat_voice_assistant.language.language_processor - INFO - LanguageProcessor initialized with multilingual support and conversation management
+2026-01-30 01:30:52,181 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,182 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,182 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:52,182 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:52,182 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,182 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-30 01:30:52,182 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-30 01:30:52,182 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-30 01:30:52,182 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:52,182 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:52,182 - bharat_voice_assistant.schemes.scheme_discovery - INFO - Initialized SchemeDiscoveryService
+2026-01-30 01:30:52,182 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-30 01:30:52,182 - bharat_voice_assistant.schemes.eligibility_assessor - INFO - Initialized EligibilityAssessor
+2026-01-30 01:30:52,182 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:52,182 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-30 01:30:52,182 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:52,182 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-30 01:30:52,182 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-30 01:30:52,183 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-30 01:30:52,183 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-30 01:30:52,183 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,183 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,183 - bharat_voice_assistant.grievance.filing_assistant - INFO - ConversationalFilingAssistant initialized
+2026-01-30 01:30:52,183 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-30 01:30:52,183 - bharat_voice_assistant.integration.government_api_client - INFO - GovernmentAPIClient initialized
+2026-01-30 01:30:52,183 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-30 01:30:52,183 - bharat_voice_assistant.integration.data_transformer - INFO - DataTransformer initialized
+2026-01-30 01:30:52,183 - bharat_voice_assistant.integration.integration_service - INFO - GovernmentIntegrationService initialized
+2026-01-30 01:30:52,183 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-30 01:30:52,183 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-30 01:30:52,184 - bharat_voice_assistant.accessibility.command_patterns - INFO - Command index built successfully
+2026-01-30 01:30:52,184 - bharat_voice_assistant.core.orchestrator - INFO - All components initialized successfully
+2026-01-30 01:30:52,184 - bharat_voice_assistant.core.orchestrator - INFO - Bharat Voice Orchestrator initialized successfully
+2026-01-30 01:30:52,357 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,359 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,361 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,363 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,365 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,368 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,370 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,372 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,373 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Audio enhancement failed: unsupported operand type(s) for *: 'Mock' and 'float'
+2026-01-30 01:30:52,375 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,381 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity assessment failed: [WinError 2] The system cannot find the file specified
+2026-01-30 01:30:52,382 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,384 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,385 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,392 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity assessment failed: [WinError 2] The system cannot find the file specified
+2026-01-30 01:30:52,392 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity score 0.50 below threshold, reducing compression
+2026-01-30 01:30:52,393 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,396 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,397 - bharat_voice_assistant.voice.bandwidth_optimizer - WARNING - Clarity score 0.50 below threshold, reducing compression
+2026-01-30 01:30:52,398 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,400 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,403 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,404 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,407 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,409 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,411 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,413 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,414 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,415 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,417 - bharat_voice_assistant.voice.bandwidth_optimizer - ERROR - Voice data optimization failed: Profile creation failed
+2026-01-30 01:30:52,418 - bharat_voice_assistant.voice.bandwidth_optimizer - INFO - BandwidthOptimizer initialized
+2026-01-30 01:30:52,419 - bharat_voice_assistant.voice.bandwidth_optimizer - ERROR - Failed to create progressive chunks: unsupported operand type(s) for /: 'Mock' and 'int'
+2026-01-30 01:30:52,424 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,424 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,425 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,426 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,426 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test_session_123
+2026-01-30 01:30:52,427 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,427 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,428 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test_session_elderly
+2026-01-30 01:30:52,429 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,429 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,429 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test_session_grievance
+2026-01-30 01:30:52,430 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,431 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,431 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test_session_error
+2026-01-30 01:30:52,433 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,433 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,434 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test_session_repeated
+2026-01-30 01:30:52,434 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,435 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,435 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test_session_recovery
+2026-01-30 01:30:52,436 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,436 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,437 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test_session_flow
+2026-01-30 01:30:52,438 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,438 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,438 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test_session_grievance_flow
+2026-01-30 01:30:52,439 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,439 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,439 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test_session_cultural
+2026-01-30 01:30:52,440 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,441 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,441 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test_session_formal
+2026-01-30 01:30:52,442 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,442 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,443 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test
+2026-01-30 01:30:52,444 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,444 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,444 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test
+2026-01-30 01:30:52,445 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,445 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,446 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,447 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,448 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,448 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,449 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test
+2026-01-30 01:30:52,450 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,450 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,451 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,451 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,452 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,452 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,452 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test
+2026-01-30 01:30:52,453 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,453 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,454 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,455 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,456 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,456 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,457 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,457 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,458 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test
+2026-01-30 01:30:52,459 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,459 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,459 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session test
+2026-01-30 01:30:52,461 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-30 01:30:52,461 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-30 01:30:52,461 - bharat_voice_assistant.language.context_manager - INFO - Created new context for session integration_test
