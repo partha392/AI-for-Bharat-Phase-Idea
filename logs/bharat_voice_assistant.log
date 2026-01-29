@@ -8669,3 +8669,331 @@ cryptography.exceptions.InvalidTag
 2026-01-29 10:56:02,772 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
 2026-01-29 10:56:02,773 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
 2026-01-29 10:56:02,773 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 11:50:58,525 - bharat_voice_assistant.core.logging - INFO - Logging initialized with level INFO and format simple
+2026-01-29 11:50:58,735 - bharat_voice_assistant.core.monitoring - INFO - CloudWatch publisher disabled (development mode or boto3 not available)
+2026-01-29 11:50:58,735 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: memory_usage
+2026-01-29 11:50:58,736 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: disk_space
+2026-01-29 11:50:58,736 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: aws_connectivity
+2026-01-29 11:50:58,738 - bharat_voice_assistant.core.aws_client - INFO - Initializing AWS clients...
+2026-01-29 11:50:58,866 - bharat_voice_assistant.core.aws_client - INFO - Created AWS sts client
+2026-01-29 11:50:58,871 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-29 11:50:58,904 - bharat_voice_assistant.core.aws_client - INFO - Created AWS s3 client
+2026-01-29 11:50:58,906 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-29 11:50:58,932 - bharat_voice_assistant.core.aws_client - INFO - Created AWS transcribe client
+2026-01-29 11:50:58,933 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-29 11:50:58,952 - bharat_voice_assistant.core.aws_client - INFO - Created AWS polly client
+2026-01-29 11:50:58,953 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-29 11:50:58,961 - bharat_voice_assistant.core.aws_client - INFO - Created AWS comprehend client
+2026-01-29 11:50:58,962 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-29 11:50:58,962 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-29 11:50:58,963 - bharat_voice_assistant.core.aws_client - WARNING - AWS configuration warning: AWS credentials not configured (using IAM role or environment)
+2026-01-29 11:50:58,994 - bharat_voice_assistant.core.cache_manager - INFO - CacheManager initialized with hybrid storage
+2026-01-29 11:50:58,997 - bharat_voice_assistant.core.request_queue - INFO - RequestQueue initialized
+2026-01-29 11:50:59,917 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: scheme_discovery
+2026-01-29 11:50:59,917 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: basic_conversation
+2026-01-29 11:50:59,917 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: status_inquiry
+2026-01-29 11:50:59,917 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: grievance_filing
+2026-01-29 11:50:59,918 - bharat_voice_assistant.core.offline_manager - INFO - OfflineManager initialized
+2026-01-29 11:50:59,921 - bharat_voice_assistant.core.offline_integration - INFO - OfflineIntegration initialized
+2026-01-29 11:51:00,034 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-29 11:51:00,149 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-29 11:51:00,149 - bharat_voice_assistant.core.data_validation - INFO - Data validation service initialized
+2026-01-29 11:51:00,150 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-29 11:51:00,150 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Trusted CA certificates loaded
+2026-01-29 11:51:00,150 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Secure authentication manager initialized
+2026-01-29 11:51:00,150 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-29 11:51:00,151 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-29 11:51:00,151 - bharat_voice_assistant.core.security_integration - INFO - Integrated security service initialized
+2026-01-29 11:51:08,200 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-29 11:51:08,201 - bharat_voice_assistant.voice.connection_manager - INFO - ConnectionManager initialized
+2026-01-29 11:51:08,201 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-29 11:51:08,201 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-29 11:51:08,202 - bharat_voice_assistant.voice.gateway - INFO - VoiceInterfaceGateway initialized on 0.0.0.0:8001
+2026-01-29 11:51:08,202 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-29 11:51:08,202 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-29 11:51:08,202 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-29 11:51:08,203 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-29 11:51:08,203 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:51:08,203 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:51:08,203 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:51:08,203 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-29 11:51:08,203 - bharat_voice_assistant.language.language_processor - INFO - LanguageProcessor initialized with multilingual support and conversation management
+2026-01-29 11:51:08,204 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:51:08,204 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-29 11:51:08,204 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:51:08,204 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:51:08,204 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:51:08,204 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-29 11:51:08,204 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-29 11:51:08,204 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-29 11:51:08,205 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:51:08,205 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:51:08,205 - bharat_voice_assistant.schemes.scheme_discovery - INFO - Initialized SchemeDiscoveryService
+2026-01-29 11:51:08,205 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-29 11:51:08,205 - bharat_voice_assistant.schemes.eligibility_assessor - INFO - Initialized EligibilityAssessor
+2026-01-29 11:51:08,206 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-29 11:51:08,206 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-29 11:51:08,206 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-29 11:51:08,206 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-29 11:51:08,207 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-29 11:51:08,207 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:51:08,207 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:51:08,207 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:51:08,208 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-29 11:51:08,208 - bharat_voice_assistant.grievance.filing_assistant - INFO - ConversationalFilingAssistant initialized
+2026-01-29 11:51:08,208 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-29 11:51:08,208 - bharat_voice_assistant.integration.government_api_client - INFO - GovernmentAPIClient initialized
+2026-01-29 11:51:08,208 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-29 11:51:08,208 - bharat_voice_assistant.integration.data_transformer - INFO - DataTransformer initialized
+2026-01-29 11:51:08,209 - bharat_voice_assistant.integration.integration_service - INFO - GovernmentIntegrationService initialized
+2026-01-29 11:51:08,209 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-29 11:51:08,209 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-29 11:51:08,210 - bharat_voice_assistant.accessibility.command_patterns - INFO - Command index built successfully
+2026-01-29 11:51:08,210 - bharat_voice_assistant.core.orchestrator - INFO - All components initialized successfully
+2026-01-29 11:51:08,210 - bharat_voice_assistant.core.orchestrator - INFO - Bharat Voice Orchestrator initialized successfully
+2026-01-29 11:51:18,729 - bharat_voice_assistant.core.logging - INFO - Logging initialized with level INFO and format simple
+2026-01-29 11:51:18,893 - bharat_voice_assistant.core.monitoring - INFO - CloudWatch publisher disabled (development mode or boto3 not available)
+2026-01-29 11:51:18,893 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: memory_usage
+2026-01-29 11:51:18,893 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: disk_space
+2026-01-29 11:51:18,893 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: aws_connectivity
+2026-01-29 11:51:18,895 - bharat_voice_assistant.core.aws_client - INFO - Initializing AWS clients...
+2026-01-29 11:51:18,993 - bharat_voice_assistant.core.aws_client - INFO - Created AWS sts client
+2026-01-29 11:51:18,998 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-29 11:51:19,028 - bharat_voice_assistant.core.aws_client - INFO - Created AWS s3 client
+2026-01-29 11:51:19,029 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-29 11:51:19,036 - bharat_voice_assistant.core.aws_client - INFO - Created AWS transcribe client
+2026-01-29 11:51:19,037 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-29 11:51:19,058 - bharat_voice_assistant.core.aws_client - INFO - Created AWS polly client
+2026-01-29 11:51:19,059 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-29 11:51:19,092 - bharat_voice_assistant.core.aws_client - INFO - Created AWS comprehend client
+2026-01-29 11:51:19,092 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-29 11:51:19,093 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-29 11:51:19,093 - bharat_voice_assistant.core.aws_client - WARNING - AWS configuration warning: AWS credentials not configured (using IAM role or environment)
+2026-01-29 11:51:19,111 - bharat_voice_assistant.core.cache_manager - INFO - CacheManager initialized with hybrid storage
+2026-01-29 11:51:19,114 - bharat_voice_assistant.core.request_queue - INFO - RequestQueue initialized
+2026-01-29 11:51:19,183 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: scheme_discovery
+2026-01-29 11:51:19,183 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: basic_conversation
+2026-01-29 11:51:19,184 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: status_inquiry
+2026-01-29 11:51:19,184 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: grievance_filing
+2026-01-29 11:51:19,184 - bharat_voice_assistant.core.offline_manager - INFO - OfflineManager initialized
+2026-01-29 11:51:19,187 - bharat_voice_assistant.core.offline_integration - INFO - OfflineIntegration initialized
+2026-01-29 11:51:19,221 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-29 11:51:19,304 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-29 11:51:19,304 - bharat_voice_assistant.core.data_validation - INFO - Data validation service initialized
+2026-01-29 11:51:19,304 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-29 11:51:19,305 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Trusted CA certificates loaded
+2026-01-29 11:51:19,305 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Secure authentication manager initialized
+2026-01-29 11:51:19,305 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-29 11:51:19,306 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-29 11:51:19,306 - bharat_voice_assistant.core.security_integration - INFO - Integrated security service initialized
+2026-01-29 11:51:20,542 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-29 11:51:20,542 - bharat_voice_assistant.voice.connection_manager - INFO - ConnectionManager initialized
+2026-01-29 11:51:20,543 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-29 11:51:20,543 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-29 11:51:20,543 - bharat_voice_assistant.voice.gateway - INFO - VoiceInterfaceGateway initialized on 0.0.0.0:8001
+2026-01-29 11:51:20,543 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-29 11:51:20,543 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-29 11:51:20,544 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-29 11:51:20,544 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-29 11:51:20,544 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:51:20,545 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:51:20,545 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:51:20,545 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-29 11:51:20,545 - bharat_voice_assistant.language.language_processor - INFO - LanguageProcessor initialized with multilingual support and conversation management
+2026-01-29 11:51:20,545 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:51:20,545 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-29 11:51:20,545 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:51:20,545 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:51:20,546 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:51:20,546 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-29 11:51:20,546 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-29 11:51:20,546 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-29 11:51:20,546 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:51:20,546 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:51:20,547 - bharat_voice_assistant.schemes.scheme_discovery - INFO - Initialized SchemeDiscoveryService
+2026-01-29 11:51:20,547 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-29 11:51:20,547 - bharat_voice_assistant.schemes.eligibility_assessor - INFO - Initialized EligibilityAssessor
+2026-01-29 11:51:20,548 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-29 11:51:20,548 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-29 11:51:20,548 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-29 11:51:20,548 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-29 11:51:20,548 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-29 11:51:20,548 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:51:20,548 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:51:20,548 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:51:20,549 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-29 11:51:20,549 - bharat_voice_assistant.grievance.filing_assistant - INFO - ConversationalFilingAssistant initialized
+2026-01-29 11:51:20,549 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-29 11:51:20,549 - bharat_voice_assistant.integration.government_api_client - INFO - GovernmentAPIClient initialized
+2026-01-29 11:51:20,549 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-29 11:51:20,549 - bharat_voice_assistant.integration.data_transformer - INFO - DataTransformer initialized
+2026-01-29 11:51:20,549 - bharat_voice_assistant.integration.integration_service - INFO - GovernmentIntegrationService initialized
+2026-01-29 11:51:20,550 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-29 11:51:20,550 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-29 11:51:20,550 - bharat_voice_assistant.accessibility.command_patterns - INFO - Command index built successfully
+2026-01-29 11:51:20,550 - bharat_voice_assistant.core.orchestrator - INFO - All components initialized successfully
+2026-01-29 11:51:20,550 - bharat_voice_assistant.core.orchestrator - INFO - Bharat Voice Orchestrator initialized successfully
+2026-01-29 11:52:37,645 - bharat_voice_assistant.core.logging - INFO - Logging initialized with level INFO and format simple
+2026-01-29 11:52:37,776 - bharat_voice_assistant.core.monitoring - INFO - CloudWatch publisher disabled (development mode or boto3 not available)
+2026-01-29 11:52:37,776 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: memory_usage
+2026-01-29 11:52:37,777 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: disk_space
+2026-01-29 11:52:37,777 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: aws_connectivity
+2026-01-29 11:52:37,778 - bharat_voice_assistant.core.aws_client - INFO - Initializing AWS clients...
+2026-01-29 11:52:37,899 - bharat_voice_assistant.core.aws_client - INFO - Created AWS sts client
+2026-01-29 11:52:37,903 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-29 11:52:37,921 - bharat_voice_assistant.core.aws_client - INFO - Created AWS s3 client
+2026-01-29 11:52:37,922 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-29 11:52:37,966 - bharat_voice_assistant.core.aws_client - INFO - Created AWS transcribe client
+2026-01-29 11:52:37,967 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-29 11:52:37,970 - bharat_voice_assistant.core.aws_client - INFO - Created AWS polly client
+2026-01-29 11:52:37,971 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-29 11:52:37,995 - bharat_voice_assistant.core.aws_client - INFO - Created AWS comprehend client
+2026-01-29 11:52:37,996 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-29 11:52:37,996 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-29 11:52:37,996 - bharat_voice_assistant.core.aws_client - WARNING - AWS configuration warning: AWS credentials not configured (using IAM role or environment)
+2026-01-29 11:52:38,013 - bharat_voice_assistant.core.cache_manager - INFO - CacheManager initialized with hybrid storage
+2026-01-29 11:52:38,016 - bharat_voice_assistant.core.request_queue - INFO - RequestQueue initialized
+2026-01-29 11:52:38,089 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: scheme_discovery
+2026-01-29 11:52:38,089 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: basic_conversation
+2026-01-29 11:52:38,089 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: status_inquiry
+2026-01-29 11:52:38,089 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: grievance_filing
+2026-01-29 11:52:38,089 - bharat_voice_assistant.core.offline_manager - INFO - OfflineManager initialized
+2026-01-29 11:52:38,092 - bharat_voice_assistant.core.offline_integration - INFO - OfflineIntegration initialized
+2026-01-29 11:52:38,123 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-29 11:52:38,203 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-29 11:52:38,203 - bharat_voice_assistant.core.data_validation - INFO - Data validation service initialized
+2026-01-29 11:52:38,204 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-29 11:52:38,204 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Trusted CA certificates loaded
+2026-01-29 11:52:38,204 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Secure authentication manager initialized
+2026-01-29 11:52:38,204 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-29 11:52:38,204 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-29 11:52:38,204 - bharat_voice_assistant.core.security_integration - INFO - Integrated security service initialized
+2026-01-29 11:52:39,476 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-29 11:52:39,477 - bharat_voice_assistant.voice.connection_manager - INFO - ConnectionManager initialized
+2026-01-29 11:52:39,477 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-29 11:52:39,477 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-29 11:52:39,478 - bharat_voice_assistant.voice.gateway - INFO - VoiceInterfaceGateway initialized on 0.0.0.0:8001
+2026-01-29 11:52:39,478 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-29 11:52:39,478 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-29 11:52:39,478 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-29 11:52:39,479 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-29 11:52:39,479 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:52:39,479 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:52:39,480 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:52:39,480 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-29 11:52:39,480 - bharat_voice_assistant.language.language_processor - INFO - LanguageProcessor initialized with multilingual support and conversation management
+2026-01-29 11:52:39,480 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:52:39,480 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-29 11:52:39,481 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:52:39,481 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:52:39,481 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:52:39,481 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-29 11:52:39,482 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-29 11:52:39,482 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-29 11:52:39,482 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:52:39,482 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:52:39,482 - bharat_voice_assistant.schemes.scheme_discovery - INFO - Initialized SchemeDiscoveryService
+2026-01-29 11:52:39,482 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-29 11:52:39,482 - bharat_voice_assistant.schemes.eligibility_assessor - INFO - Initialized EligibilityAssessor
+2026-01-29 11:52:39,483 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-29 11:52:39,483 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-29 11:52:39,483 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-29 11:52:39,483 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-29 11:52:39,483 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-29 11:52:39,483 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:52:39,484 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:52:39,484 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:52:39,484 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-29 11:52:39,484 - bharat_voice_assistant.grievance.filing_assistant - INFO - ConversationalFilingAssistant initialized
+2026-01-29 11:52:39,484 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-29 11:52:39,485 - bharat_voice_assistant.integration.government_api_client - INFO - GovernmentAPIClient initialized
+2026-01-29 11:52:39,485 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-29 11:52:39,485 - bharat_voice_assistant.integration.data_transformer - INFO - DataTransformer initialized
+2026-01-29 11:52:39,485 - bharat_voice_assistant.integration.integration_service - INFO - GovernmentIntegrationService initialized
+2026-01-29 11:52:39,485 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-29 11:52:39,486 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-29 11:52:39,486 - bharat_voice_assistant.accessibility.command_patterns - INFO - Command index built successfully
+2026-01-29 11:52:39,486 - bharat_voice_assistant.core.orchestrator - INFO - All components initialized successfully
+2026-01-29 11:52:39,486 - bharat_voice_assistant.core.orchestrator - INFO - Bharat Voice Orchestrator initialized successfully
+2026-01-29 11:53:08,303 - bharat_voice_assistant.core.logging - INFO - Logging initialized with level INFO and format simple
+2026-01-29 11:53:08,423 - bharat_voice_assistant.core.monitoring - INFO - CloudWatch publisher disabled (development mode or boto3 not available)
+2026-01-29 11:53:08,423 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: memory_usage
+2026-01-29 11:53:08,423 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: disk_space
+2026-01-29 11:53:08,423 - bharat_voice_assistant.core.monitoring - INFO - Registered health check: aws_connectivity
+2026-01-29 11:53:08,425 - bharat_voice_assistant.core.aws_client - INFO - Initializing AWS clients...
+2026-01-29 11:53:08,520 - bharat_voice_assistant.core.aws_client - INFO - Created AWS sts client
+2026-01-29 11:53:08,521 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-29 11:53:08,556 - bharat_voice_assistant.core.aws_client - INFO - Created AWS s3 client
+2026-01-29 11:53:08,557 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-29 11:53:08,578 - bharat_voice_assistant.core.aws_client - INFO - Created AWS transcribe client
+2026-01-29 11:53:08,579 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-29 11:53:08,582 - bharat_voice_assistant.core.aws_client - INFO - Created AWS polly client
+2026-01-29 11:53:08,583 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-29 11:53:08,608 - bharat_voice_assistant.core.aws_client - INFO - Created AWS comprehend client
+2026-01-29 11:53:08,609 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-29 11:53:08,609 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-29 11:53:08,609 - bharat_voice_assistant.core.aws_client - WARNING - AWS configuration warning: AWS credentials not configured (using IAM role or environment)
+2026-01-29 11:53:08,614 - bharat_voice_assistant.core.cache_manager - INFO - CacheManager initialized with hybrid storage
+2026-01-29 11:53:08,616 - bharat_voice_assistant.core.request_queue - INFO - RequestQueue initialized
+2026-01-29 11:53:08,689 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: scheme_discovery
+2026-01-29 11:53:08,689 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: basic_conversation
+2026-01-29 11:53:08,689 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: status_inquiry
+2026-01-29 11:53:08,690 - bharat_voice_assistant.core.offline_manager - INFO - Registered offline capability: grievance_filing
+2026-01-29 11:53:08,690 - bharat_voice_assistant.core.offline_manager - INFO - OfflineManager initialized
+2026-01-29 11:53:08,690 - bharat_voice_assistant.core.offline_integration - INFO - OfflineIntegration initialized
+2026-01-29 11:53:08,729 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-29 11:53:08,847 - bharat_voice_assistant.core.security - INFO - Security protocol manager initialized
+2026-01-29 11:53:08,847 - bharat_voice_assistant.core.data_validation - INFO - Data validation service initialized
+2026-01-29 11:53:08,847 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-29 11:53:08,848 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Trusted CA certificates loaded
+2026-01-29 11:53:08,848 - bharat_voice_assistant.integration.secure_auth_protocols - INFO - Secure authentication manager initialized
+2026-01-29 11:53:08,848 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-29 11:53:08,848 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-29 11:53:08,848 - bharat_voice_assistant.core.security_integration - INFO - Integrated security service initialized
+2026-01-29 11:53:10,227 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-29 11:53:10,227 - bharat_voice_assistant.voice.connection_manager - INFO - ConnectionManager initialized
+2026-01-29 11:53:10,227 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-29 11:53:10,227 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-29 11:53:10,227 - bharat_voice_assistant.voice.gateway - INFO - VoiceInterfaceGateway initialized on 0.0.0.0:8001
+2026-01-29 11:53:10,227 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-29 11:53:10,227 - bharat_voice_assistant.voice.speech_recognition - INFO - SpeechRecognizer initialized with Indian language models
+2026-01-29 11:53:10,227 - bharat_voice_assistant.voice.text_to_speech - INFO - TextToSpeechSynthesizer initialized with Indian voices
+2026-01-29 11:53:10,227 - bharat_voice_assistant.voice.audio_processor - INFO - AudioProcessor initialized
+2026-01-29 11:53:10,227 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:53:10,228 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:53:10,228 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:53:10,228 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-29 11:53:10,228 - bharat_voice_assistant.language.language_processor - INFO - LanguageProcessor initialized with multilingual support and conversation management
+2026-01-29 11:53:10,228 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:53:10,228 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-29 11:53:10,228 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:53:10,229 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:53:10,229 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:53:10,229 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-29 11:53:10,229 - bharat_voice_assistant.schemes.user_profile - INFO - Initialized UserProfileManager
+2026-01-29 11:53:10,229 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-29 11:53:10,229 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:53:10,229 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:53:10,229 - bharat_voice_assistant.schemes.scheme_discovery - INFO - Initialized SchemeDiscoveryService
+2026-01-29 11:53:10,229 - bharat_voice_assistant.schemes.scheme_matcher - INFO - Initialized IntelligentSchemeMatcher
+2026-01-29 11:53:10,229 - bharat_voice_assistant.schemes.eligibility_assessor - INFO - Initialized EligibilityAssessor
+2026-01-29 11:53:10,229 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-29 11:53:10,229 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-29 11:53:10,229 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-29 11:53:10,229 - bharat_voice_assistant.grievance.workflow_manager - INFO - GrievanceWorkflowManager initialized
+2026-01-29 11:53:10,229 - bharat_voice_assistant.grievance.validator - INFO - GrievanceValidator initialized
+2026-01-29 11:53:10,230 - bharat_voice_assistant.language.intent_classifier - INFO - IntentClassifier initialized with 10 languages
+2026-01-29 11:53:10,230 - bharat_voice_assistant.language.entity_extractor - INFO - EntityExtractor initialized
+2026-01-29 11:53:10,230 - bharat_voice_assistant.language.context_manager - INFO - ContextManager initialized
+2026-01-29 11:53:10,230 - bharat_voice_assistant.language.conversation_manager - INFO - ConversationManager initialized with cultural adaptation
+2026-01-29 11:53:10,230 - bharat_voice_assistant.grievance.filing_assistant - INFO - ConversationalFilingAssistant initialized
+2026-01-29 11:53:10,230 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-29 11:53:10,230 - bharat_voice_assistant.integration.government_api_client - INFO - GovernmentAPIClient initialized
+2026-01-29 11:53:10,230 - bharat_voice_assistant.integration.auth_manager - INFO - AuthenticationManager initialized
+2026-01-29 11:53:10,230 - bharat_voice_assistant.integration.data_transformer - INFO - DataTransformer initialized
+2026-01-29 11:53:10,230 - bharat_voice_assistant.integration.integration_service - INFO - GovernmentIntegrationService initialized
+2026-01-29 11:53:10,230 - bharat_voice_assistant.privacy.encryption_service - WARNING - No master key found in environment, generating temporary key
+2026-01-29 11:53:10,231 - bharat_voice_assistant.privacy.privacy_manager - INFO - Privacy manager initialized
+2026-01-29 11:53:10,231 - bharat_voice_assistant.accessibility.command_patterns - INFO - Command index built successfully
+2026-01-29 11:53:10,231 - bharat_voice_assistant.core.orchestrator - INFO - All components initialized successfully
+2026-01-29 11:53:10,231 - bharat_voice_assistant.core.orchestrator - INFO - Bharat Voice Orchestrator initialized successfully
