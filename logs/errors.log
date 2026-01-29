@@ -633,3 +633,95 @@ cryptography.exceptions.InvalidTag
 2026-01-28 10:09:25,760 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
 2026-01-28 10:09:25,761 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
 2026-01-28 10:09:25,762 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:45:40,084 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-28 10:45:40,103 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-28 10:45:40,111 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-28 10:45:40,116 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-28 10:45:40,145 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-28 10:45:40,145 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-28 10:46:08,917 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-28 10:46:08,973 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-28 10:46:09,007 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-28 10:46:09,034 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-28 10:46:09,069 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-28 10:46:09,069 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-28 10:50:28,061 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-28 10:50:28,103 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-28 10:50:28,109 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-28 10:50:28,137 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-28 10:50:28,156 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-28 10:50:28,156 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-28 10:50:41,978 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-28 10:50:42,018 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-28 10:50:42,054 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-28 10:50:42,060 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-28 10:50:42,085 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-28 10:50:42,086 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-28 10:50:43,598 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,598 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,599 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,599 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,599 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,599 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,599 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,599 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,600 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,600 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,600 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,600 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,601 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,601 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,601 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,602 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,602 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,602 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,603 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,603 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,603 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,605 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,605 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:50:43,605 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-28 10:53:44,000 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-28 10:53:44,019 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-28 10:53:44,027 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-28 10:53:44,047 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-28 10:53:44,096 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-28 10:53:44,096 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-29 10:55:23,691 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-29 10:55:23,753 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-29 10:55:23,779 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-29 10:55:23,822 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-29 10:55:23,846 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-29 10:55:23,846 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-29 10:55:32,241 - bharat_voice_assistant.voice.bandwidth_optimizer - ERROR - Voice data optimization failed: Profile creation failed
+2026-01-29 10:55:32,247 - bharat_voice_assistant.voice.bandwidth_optimizer - ERROR - Failed to create progressive chunks: unsupported operand type(s) for /: 'Mock' and 'int'
+2026-01-29 10:55:59,370 - bharat_voice_assistant.core.aws_client - ERROR - AWS STS connectivity test failed: Unable to locate credentials
+2026-01-29 10:55:59,414 - bharat_voice_assistant.core.aws_client - ERROR - AWS S3 connectivity test failed: Unable to locate credentials
+2026-01-29 10:55:59,451 - bharat_voice_assistant.core.aws_client - ERROR - AWS Transcribe connectivity test failed: Unable to locate credentials
+2026-01-29 10:55:59,475 - bharat_voice_assistant.core.aws_client - ERROR - AWS Polly connectivity test failed: Unable to locate credentials
+2026-01-29 10:55:59,513 - bharat_voice_assistant.core.aws_client - ERROR - AWS Comprehend connectivity test failed: Unable to locate credentials
+2026-01-29 10:55:59,513 - bharat_voice_assistant.core.aws_client - ERROR - AWS configuration validation failed: ['Critical AWS services failed connectivity test: sts, s3, transcribe, polly']
+2026-01-29 10:56:02,746 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,747 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,748 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,748 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,749 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,749 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,750 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,751 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,751 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,752 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,752 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,753 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,755 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,756 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,757 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,760 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,761 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,762 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,765 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,765 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,766 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,772 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process text interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,773 - bharat_voice_assistant.core.orchestrator - ERROR - Failed to process interaction: 'LanguageProcessor' object has no attribute 'process_text'
+2026-01-29 10:56:02,773 - bharat_voice_assistant.accessibility.error_handling - ERROR - Error handled: system - high - 'LanguageProcessor' object has no attribute 'process_text'

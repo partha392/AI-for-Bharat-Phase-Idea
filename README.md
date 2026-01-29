@@ -1,52 +1,44 @@
 # 🇮🇳 Bharat Voice Assistant
 
-A multilingual, voice-first AI system designed to help rural and semi-urban citizens of India discover government schemes, file grievances, and track their status through natural voice interactions in their native languages.
+**A voice-first digital assistant for government services in Indian languages**
 
-## 🎯 Overview
+## 🎯 What This Solves
 
-The Bharat Voice Assistant democratizes access to government services by providing:
+**Problem**: 70% of Indians struggle with digital government services due to language barriers and complex interfaces.
 
-- **Voice-First Interface**: Natural conversation in 10 Indian languages
-- **Beautiful Web GUI**: Streamlit-based interface with Indian tricolor theme
-- **Government Scheme Discovery**: Intelligent matching of citizens with relevant programs
-- **Grievance Management**: Step-by-step guidance for filing and tracking complaints
-- **Low-Bandwidth Optimization**: Works efficiently on slow internet connections
-- **Privacy Protection**: Compliant with Indian data protection regulations
-- **Scalable Architecture**: Cloud-native design for millions of concurrent users
+**Solution**: Speak naturally in Hindi/English/Tamil → Get government scheme info → File grievances → Track status.
 
-## 🌟 Key Features
+## 🔍 Proof of Functionality
 
-### 🎨 Beautiful Web Interface
-- **Streamlit GUI** with Indian tricolor theme (Saffron, White, Green)
-- **Bilingual interface** (Hindi + English throughout)
-- **Interactive dashboards** with real-time charts and analytics
-- **Mobile-responsive design** for all devices
-- **Voice + Visual** - Perfect combination of voice-first with GUI backup
+### ✅ What Works RIGHT NOW
+- **Voice-like interaction** via demo buttons (Hindi/English/Tamil)
+- **Complete Streamlit GUI** with Indian cultural theme
+- **End-to-end workflows**: Scheme discovery, grievance filing, status tracking
+- **Language switching** with immediate UI updates
+- **Mock government data** for realistic demos
+- **Docker deployment** for local testing
 
-### 🌐 Multilingual Support
-- Hindi, English, Tamil, Telugu, Bengali, Marathi, Gujarati, Kannada, Malayalam, Punjabi
-- Automatic language detection and switching
-- Regional accent adaptation
+### ❌ What's Planned/Mocked
+- Real voice input (browser microphone limitations)
+- Live government API integration (using mock data)
+- AWS cloud deployment (local Docker works)
 
-### 🏛️ Government Services Integration
-- Real-time scheme database with 1000+ programs
-- Direct integration with e-governance portals
-- Automated status tracking and notifications
-- Document requirement guidance
+## 🚀 Try It Now (30 seconds)
 
-### ♿ Accessibility First
-- Voice-only interaction capability
-- Simple vocabulary and clear instructions
-- Multiple ways to accomplish tasks
-- Elderly and low-literacy user friendly
+```bash
+# 1. Launch the GUI
+python run_gui.py
 
-### 🔧 Technical Excellence
-- AWS cloud infrastructure with auto-scaling
-- Property-based testing for correctness validation
-- Comprehensive monitoring and logging
-- Docker containerization for easy deployment
+# 2. Open browser: http://localhost:8501
 
-## 🚀 Quick Start
+# 3. Click "Voice Chat" → "Start Voice Chat"
+
+# 4. Try demo command: "मुझे कृषि योजनाओं के बारे में बताएं"
+
+# 5. See AI response with scheme recommendations
+```
+
+**Primary Demo Language**: Hindi (others experimental)
 
 ### Prerequisites
 
